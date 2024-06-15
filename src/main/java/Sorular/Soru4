@@ -16,28 +16,35 @@
   AÇIKLAMA 2 :
   Boyut:
   Array: Sabit boyutludur. Tanımlandıktan sonra boyutu değiştirilemez.
-  ArrayList: Dinamik boyutludur. Eleman eklendikçe veya çıkarıldıkça boyutu otomatik olarak ayarlanır.
+  ArrayList: Dinamik boyutludur. Eleman eklendikçe veya çıkarıldıkça boyutu
+  otomatik olarak ayarlanır.
 
   Eleman Türü:
   Array: Homojen yapılıdır; yani, aynı türden elemanlar saklanır.
-  ArrayList: Genellikle homojen yapıdadır, ancak Object tipi kullanılarak farklı türlerde elemanlar da saklanabilir.
+  ArrayList: Genellikle homojen yapıdadır, ancak Object tipi kullanılarak farklı
+   türlerde elemanlar da saklanabilir.
 
   Genel Amaçlılık:
   Array: Herhangi bir veri tipiyle (primitif veya referans) kullanılabilir.
-  ArrayList: Sadece referans veri tipleriyle çalışır. Primitif veri tipleri için ArrayList kullanmak istendiğinde, Integer, Double gibi wrapper sınıfları kullanılmalıdır.
+  ArrayList: Sadece referans veri tipleriyle çalışır. Primitif veri tipleri için
+   ArrayList kullanmak istendiğinde, Integer, Double gibi wrapper sınıfları kullanılmalıdır.
 
   AÇIKLAMA 3 :
 Array:
 Sabit Boyutlu: Oluşturulduktan sonra boyutu değiştirilemez.
-İlkel Veri Tiplerini ve Nesneleri Depolayabilir: Hem ilkel veri tiplerini (int, float, boolean vb.) hem de nesneleri depolayabilir.
+İlkel Veri Tiplerini ve Nesneleri Depolayabilir: Hem ilkel veri tiplerini
+(int, float, boolean vb.) hem de nesneleri depolayabilir.
 Hızlı Erişim: Belirli bir indekse erişim hızlıdır (O(1)).
-Bellek Yönetimi: Bellekte statik olarak tahsis edilir ve garbage collector tarafından otomatik olarak yönetilmez.
+Bellek Yönetimi: Bellekte statik olarak tahsis edilir ve garbage collector
+ tarafından otomatik olarak yönetilmez.
 Çok Boyutlu Olabilir: Birden fazla boyuta sahip array'ler oluşturabilirsiniz.
 Doğrudan Değer Atanır: Bir array elemanına atanan değer, o elemanın kopyasıdır.
 
 ArrayList:
-Dinamik Boyutlu: Eleman eklendikçe veya silindikçe otomatik olarak büyür veya küçülür.
-Sadece Nesneleri Depolayabilir: Yalnızca nesneleri depolayabilir, ilkel veri tiplerini değil.
+Dinamik Boyutlu: Eleman eklendikçe veya silindikçe otomatik olarak büyür
+veya küçülür.
+Sadece Nesneleri Depolayabilir: Yalnızca nesneleri depolayabilir, ilkel
+veri tiplerini değil.
 Erişim Hızı: Belirli bir indekse erişim biraz daha yavaştır (O(n)).
 Bellek Yönetimi: Garbage collector tarafından otomatik olarak yönetilir.
 Tek Boyutludur: Sadece tek boyutlu ArrayList'ler oluşturabilirsiniz.
