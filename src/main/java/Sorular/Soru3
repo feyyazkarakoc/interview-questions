@@ -74,4 +74,4 @@ Soru 3 : Abstract Class ile Interface arasındaki farklar nelerdir?
 
              Abstract sınıflar içerisine, final, final olmayan, static ve static olmayan tiplerde
              değişkenler tanımlanabilir.
-             Interface içerisine sadece static ve final değişkenler
+             Interface içerisine sadece static ve final değişkenler tanımlanabilir.
