@@ -1,0 +1,63 @@
+Soru 3 : Abstract Class ile Interface arasındaki farklar nelerdir?
+
+         AÇIKLAMA 1 :
+
+          1) Abstract sınıflar, abstract metodlar ile birlikte abstract olmayan metodları da içerebilir.
+          Interface ise yalnızca abstract metodları içerebilir. Fakat Java 8 ile birlikte istisnai bir durum olarak default ve static kelimeleri ile non-abstract methodlar oluşturmak mümkün hale gelmiştir.
+
+          2) Abstract class multiple inheritance’ı desteklemez
+          Interface multiple inheritance’ı destekler. Yani bir class veya interface birden fazla interface’in alt sınıfı olabilir.
+
+          3) Abstract class, final, static olan veya olmayan değişkenler içerebilir.
+          Interface ise yalnızca public static ve final değişkenler içerebilir.
+
+          4) Abstract class bir interface’e implement edilebilir.
+          Interface ise bir class’a implement veya extend edilemez.
+
+          5) Bir sınıfı abstract class’a çevirmek için abstract kelimesinin kullanılması zorunludur. Aynı şekilde abstract class içerinde oluşturulacak abstract metodlar için de abstract kelimesi kullanmak gerekir.	Interface bizzatihi abstract olduğu için abstract kelimesini metotta veya interface ismi yanında kullanmaya gerek yoktur.
+
+          6) Abstract class bir interface’e implement veya bir class’a extend edilebilir.
+          Bir interface yalnızca başka bir interface’e extend edilebilir.
+
+          7) Abstract class elemanları için private, protect, public vb erişim belirteçleri kullanılabilir.	Interface elemanları public veya default’tur.
+
+          8) Abstract class, isminden de anlaşılabileceği gibi bir class’tır.
+          Interface ise bir class değildir.
+
+          9)Örnek:
+           public abstract class OrnekClass{
+           public abstract void run();
+           }	Örnek:
+           public interface OrnekInterface{
+           void run();
+           }
+
+
+
+            AÇIKLAMA 2 :
+
+            Abstract Sınıf  -  Interface
+
+             Abstract sınıftan extends ile kalıtım alınabilir .
+             Interface ise implements ile sınıfa implemente edilir ve bu şekilde kalıtım alınır.
+
+             Bir sınıf yalnızca birtane abstract class extend edebilir.
+             Bir sınıf birden fazla interface'ten kalıtım alabilir. Birden fazla interface implmente edilebilir...
+
+             Abstract sınıflar içerisine hem sanal metodlar hem normal metodlar tanımlanabilir.
+             Interface içerisinde metodlar sadece sanal metod olarak tanımlanabilir. Metod body kısmı tanımlanmaz.
+
+             Abstract sınıflar hem diğer abstract sınıfları extend ederek, hemde diğer interface'leri implemente ederek çoklu kalıtım alabilir.
+             Interface'ler sadece diğer inteface'leri implemente ederek çoklu kalıtım alabilir. Bu işlem extend kelimesi ile yapılır.
+
+             Abstract sınıflar, interface lerden kalıtım alabilir. Bunun için bir interface'i implemente etmesi gerekir...
+             Interface'ler ise abstract sınıfları extend edemezler, yani kalıtım alamazlar.
+
+             Abstract sınıflar içerisine tanımlanan elemanlar, abstraction için bütün erişim belirteçlerini alabilir. public, private, protected...
+             Interface içerisinde tanımlanan elemanlar ise default olarak public tanımlıdır. Tanımlama esnasında herhangi bir erişim belirteci kullanılmaz..
+
+             Abstract sınıflar içerisine tanımlanan değerler final ve normal şekilde tanımlanabilir.
+             Interface'ler içerisinde tanımlanan değişkenler default olarak final tanımlıdır.
+
+             Abstract sınıflar içerisine, final, final olmayan, static ve static olmayan tiplerde değişkenler tanımlanabilir.
+             Interface içerisine sadece static ve final değişkenler

@@ -1,0 +1,44 @@
+ Soru 4 : Array ve ArrayList arasındaki farklar nelerdir?
+
+  AÇIKLAMA 1 :
+  1. Array, farklı veri türlerinin değerlerini içeremez.
+  ArrayList bunları içerebilir.
+
+  2. Array size’ı tanımlanmalıdır.
+  ArrayList size’ı dinamik olarak değiştirilebilir.
+
+  3. Veri eklemek için Array’in indeksi belirtmesi gerekir.
+  ArrayList buna ihtiyacı yok.
+
+  4. Array’ler primitive data ve nesneler (Objects) içerebilir.
+  ArrayList yalnızca objeleri içerebilir
+
+  AÇIKLAMA 2 :
+  Boyut:
+  Array: Sabit boyutludur. Tanımlandıktan sonra boyutu değiştirilemez.
+  ArrayList: Dinamik boyutludur. Eleman eklendikçe veya çıkarıldıkça boyutu otomatik olarak ayarlanır.
+
+  Eleman Türü:
+  Array: Homojen yapılıdır; yani, aynı türden elemanlar saklanır.
+  ArrayList: Genellikle homojen yapıdadır, ancak Object tipi kullanılarak farklı türlerde elemanlar da saklanabilir.
+
+  Genel Amaçlılık:
+  Array: Herhangi bir veri tipiyle (primitif veya referans) kullanılabilir.
+  ArrayList: Sadece referans veri tipleriyle çalışır. Primitif veri tipleri için ArrayList kullanmak istendiğinde, Integer, Double gibi wrapper sınıfları kullanılmalıdır.
+
+  AÇIKLAMA 3 :
+Array:
+Sabit Boyutlu: Oluşturulduktan sonra boyutu değiştirilemez.
+İlkel Veri Tiplerini ve Nesneleri Depolayabilir: Hem ilkel veri tiplerini (int, float, boolean vb.) hem de nesneleri depolayabilir.
+Hızlı Erişim: Belirli bir indekse erişim hızlıdır (O(1)).
+Bellek Yönetimi: Bellekte statik olarak tahsis edilir ve garbage collector tarafından otomatik olarak yönetilmez.
+Çok Boyutlu Olabilir: Birden fazla boyuta sahip array'ler oluşturabilirsiniz.
+Doğrudan Değer Atanır: Bir array elemanına atanan değer, o elemanın kopyasıdır.
+
+ArrayList:
+Dinamik Boyutlu: Eleman eklendikçe veya silindikçe otomatik olarak büyür veya küçülür.
+Sadece Nesneleri Depolayabilir: Yalnızca nesneleri depolayabilir, ilkel veri tiplerini değil.
+Erişim Hızı: Belirli bir indekse erişim biraz daha yavaştır (O(n)).
+Bellek Yönetimi: Garbage collector tarafından otomatik olarak yönetilir.
+Tek Boyutludur: Sadece tek boyutlu ArrayList'ler oluşturabilirsiniz.
+Referans Atanır: Bir ArrayList elemanına atanan değer, o elemanın referansıdır.
