@@ -30,8 +30,9 @@ Soru 6 : Java programlama dilinin özellikleri nelerdir?
          Ayrıca, büyük kullanıcı topluluğu vardır. Bu topluluk ile Java geliştiricileri
          birbirlerinden yardım alabilir.
 
-         AÇIKLAMA 2 :
 
+
+         AÇIKLAMA 2 :
 
          Java, yazılım geliştirme dünyasında oldukça popüler olan, genel amaçlı ve yüksek
          seviyeli bir programlama dilidir. Java'nın başlıca özellikleri şunlardır:
@@ -48,29 +49,43 @@ Soru 6 : Java programlama dilinin özellikleri nelerdir?
           bulunan her platformda çalışabilir.
 
          Güvenlik:
+         Java, güvenlik üzerine büyük bir vurgu yapar. Güçlü bir güvenlik yöneticisi
+         (security manager) ve sınıf yükleyici (class loader) sistemi ile güvenlik
+         tehditlerine karşı koruma sağlar.
 
-Java, güvenlik üzerine büyük bir vurgu yapar. Güçlü bir güvenlik yöneticisi (security manager) ve sınıf yükleyici (class loader) sistemi ile güvenlik tehditlerine karşı koruma sağlar.
-Çok İşlemli (Multithreaded) Programlama:
+         Çok İşlemli (Multithreaded) Programlama:
+         Java, aynı anda birden fazla iş parçacığı (thread) çalıştırabilme
+         yeteneğine sahiptir. Bu, daha verimli ve performanslı uygulamaların
+         geliştirilmesine olanak tanır.
 
-Java, aynı anda birden fazla iş parçacığı (thread) çalıştırabilme yeteneğine sahiptir. Bu, daha verimli ve performanslı uygulamaların geliştirilmesine olanak tanır.
-Bellek Yönetimi:
+         Bellek Yönetimi:
+         Java, otomatik bellek yönetimi (garbage collection) sunar. Bu özellik,
+         programcıların bellek yönetimiyle ilgili karmaşık detaylarla uğraşmasını önler.
 
-Java, otomatik bellek yönetimi (garbage collection) sunar. Bu özellik, programcıların bellek yönetimiyle ilgili karmaşık detaylarla uğraşmasını önler.
-Dağıtık Hesaplama:
+         Dağıtık Hesaplama:
+         Java, ağ üzerinden dağıtık uygulamalar geliştirmeyi kolaylaştıran çeşitli
+         API'ler sunar. Özellikle RMI (Remote Method Invocation) ile uzak makinelerdeki
+          nesnelerle etkileşim kurulabilir.
 
-Java, ağ üzerinden dağıtık uygulamalar geliştirmeyi kolaylaştıran çeşitli API'ler sunar. Özellikle RMI (Remote Method Invocation) ile uzak makinelerdeki nesnelerle etkileşim kurulabilir.
-Kapsamlı Kütüphaneler:
+          Kapsamlı Kütüphaneler:
+          Java, zengin ve geniş kapsamlı standart kütüphaneler (Java API) sunar.
+           Bu kütüphaneler, dosya işlemleri, ağ iletişimi, veri tabanı bağlantıları,
+           GUI (Grafik Kullanıcı Arayüzü) geliştirme ve daha birçok alanda kullanışlı
+           araçlar sağlar.
 
-Java, zengin ve geniş kapsamlı standart kütüphaneler (Java API) sunar. Bu kütüphaneler, dosya işlemleri, ağ iletişimi, veri tabanı bağlantıları, GUI (Grafik Kullanıcı Arayüzü) geliştirme ve daha birçok alanda kullanışlı araçlar sağlar.
-Yüksek Performans:
+           Yüksek Performans:
+           Java'nın Just-In-Time (JIT) derleyicisi sayesinde, kodlar çalışma anında
+           derlenerek yüksek performans elde edilir.
 
-Java'nın Just-In-Time (JIT) derleyicisi sayesinde, kodlar çalışma anında derlenerek yüksek performans elde edilir.
-Taşınabilirlik:
+           Taşınabilirlik:
+           Java, makine bağımsız bir dil olduğu için, programlar herhangi bir platformda
+           minimum değişiklikle çalışabilir. Bytecode, her platformda aynı şekilde
+           çalışmasını sağlar.
 
-Java, makine bağımsız bir dil olduğu için, programlar herhangi bir platformda minimum değişiklikle çalışabilir. Bytecode, her platformda aynı şekilde çalışmasını sağlar.
-Basitlik ve Kullanım Kolaylığı:
+           Basitlik ve Kullanım Kolaylığı:
+           Java, öğrenmesi ve kullanması görece kolay bir dildir. Karmaşık özelliklerden
+           arındırılmıştır ve kodlama hatalarını en aza indirmek için tasarlanmıştır.
 
-Java, öğrenmesi ve kullanması görece kolay bir dildir. Karmaşık özelliklerden arındırılmıştır ve kodlama hatalarını en aza indirmek için tasarlanmıştır.
-Geriye Dönük Uyumluluk:
-
-Java, önceki sürümlerle geriye dönük uyumluluğu korur. Bu, eski Java uygulamalarının yeni sürümlerde de çalışabileceği anlamına gelir.
+           Geriye Dönük Uyumluluk:
+           Java, önceki sürümlerle geriye dönük uyumluluğu korur. Bu, eski Java uygulamalarının
+            yeni sürümlerde de çalışabileceği anlamına gelir.
