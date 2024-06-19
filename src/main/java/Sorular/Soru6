@@ -1,0 +1,76 @@
+Soru 6 : Java programlama dilinin özellikleri nelerdir?
+
+         AÇIKLAMA 1 :
+
+         Nesne yönelimli: Java, nesne-yönelimli bir programlama dilidir.
+
+         Platformdan bağımsız: Java, bir kez yazılır ve farklı platformda
+         çalışabilir. Birçok farklı işletim sistemini destekler.
+
+         Otomatik bellek yönetimi: Java, bellek yönetimini otomatik olarak
+         gerçekleştirerek, programcının bellek yönetimiyle ilgilenmesini
+         ortadan kaldırır.
+
+         Güvenli: Java, oldukça güvenlidir. Kodun güvenliğini sağlar.
+
+         Açık kaynak: Java, açık kaynak bir programlama dilidir.
+          İsteyen herkes Java’yı kullanabilir. Kullanıcıların kodlarını
+          değiştirmesine veya kullanmasına izin verir.
+
+         Multithreading: Java, birden fazla iş parçacığını (thread) destekler
+         ve aynı anda birden fazla işlemi gerçekleştirmek için kullanır.
+
+         Dinamik: Java, dinamik olarak bağlantı kurar.
+
+         Geniş kapsamlı: Java, geniş kapsamlı bir programlama dilidir.
+         Birçok farklı alanda kullanılabilir ve farklı türde yazılım geliştirmek
+         için kullanılır.
+
+         Büyük kullanıcı topluluğu: Java’nın geniş bir kullanıcı ekosistemi bulunur.
+         Ayrıca, büyük kullanıcı topluluğu vardır. Bu topluluk ile Java geliştiricileri
+         birbirlerinden yardım alabilir.
+
+         AÇIKLAMA 2 :
+
+
+         Java, yazılım geliştirme dünyasında oldukça popüler olan, genel amaçlı ve yüksek
+         seviyeli bir programlama dilidir. Java'nın başlıca özellikleri şunlardır:
+
+         Nesne Yönelimli Programlama (OOP):
+         Java, nesne yönelimli bir dildir ve sınıf (class), nesne (object), kalıtım (inheritance),
+         çok biçimlilik (polymorphism), soyutlama (abstraction) ve kapsülleme (encapsulation)
+         gibi temel OOP prensiplerini destekler.
+
+         Platform Bağımsızlığı:
+         Java, "Write Once, Run Anywhere" (Bir kez yaz, her yerde çalıştır) felsefesine uygun
+         olarak tasarlanmıştır. Bu, Java kodlarının herhangi bir işletim sisteminde çalışabileceği
+          anlamına gelir. Bytecode adı verilen ara kodlar sayesinde, JVM (Java Virtual Machine)
+          bulunan her platformda çalışabilir.
+
+         Güvenlik:
+
+Java, güvenlik üzerine büyük bir vurgu yapar. Güçlü bir güvenlik yöneticisi (security manager) ve sınıf yükleyici (class loader) sistemi ile güvenlik tehditlerine karşı koruma sağlar.
+Çok İşlemli (Multithreaded) Programlama:
+
+Java, aynı anda birden fazla iş parçacığı (thread) çalıştırabilme yeteneğine sahiptir. Bu, daha verimli ve performanslı uygulamaların geliştirilmesine olanak tanır.
+Bellek Yönetimi:
+
+Java, otomatik bellek yönetimi (garbage collection) sunar. Bu özellik, programcıların bellek yönetimiyle ilgili karmaşık detaylarla uğraşmasını önler.
+Dağıtık Hesaplama:
+
+Java, ağ üzerinden dağıtık uygulamalar geliştirmeyi kolaylaştıran çeşitli API'ler sunar. Özellikle RMI (Remote Method Invocation) ile uzak makinelerdeki nesnelerle etkileşim kurulabilir.
+Kapsamlı Kütüphaneler:
+
+Java, zengin ve geniş kapsamlı standart kütüphaneler (Java API) sunar. Bu kütüphaneler, dosya işlemleri, ağ iletişimi, veri tabanı bağlantıları, GUI (Grafik Kullanıcı Arayüzü) geliştirme ve daha birçok alanda kullanışlı araçlar sağlar.
+Yüksek Performans:
+
+Java'nın Just-In-Time (JIT) derleyicisi sayesinde, kodlar çalışma anında derlenerek yüksek performans elde edilir.
+Taşınabilirlik:
+
+Java, makine bağımsız bir dil olduğu için, programlar herhangi bir platformda minimum değişiklikle çalışabilir. Bytecode, her platformda aynı şekilde çalışmasını sağlar.
+Basitlik ve Kullanım Kolaylığı:
+
+Java, öğrenmesi ve kullanması görece kolay bir dildir. Karmaşık özelliklerden arındırılmıştır ve kodlama hatalarını en aza indirmek için tasarlanmıştır.
+Geriye Dönük Uyumluluk:
+
+Java, önceki sürümlerle geriye dönük uyumluluğu korur. Bu, eski Java uygulamalarının yeni sürümlerde de çalışabileceği anlamına gelir.
