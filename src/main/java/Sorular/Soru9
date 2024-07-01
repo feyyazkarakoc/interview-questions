@@ -1,0 +1,10 @@
+Java’da this() ve super() arasındaki fark nedir?
+
+this():Bir sınıfın mevcut örneğini temsil eder.Aynı sınıfın başka bir
+ constructor'ını çağırmak için kullanılır.Mevcut sınıfın yöntemlerine ve
+  değişkenlerine erişmek için kullanılır.
+
+
+super():Bir üst/temel sınıfın geçerli örneğini temsil eder.Üst/temel sınıfın
+constructor'ını çağırmak için kullanılır.Üst sınıfın yöntemlerine ve değişkenlerine
+ erişmek için kullanılır.

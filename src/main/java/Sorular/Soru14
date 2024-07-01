@@ -1,0 +1,47 @@
+”public static void main(String[ ] args)” neden kullanmalıyız?
+
+Java'da ana method (main method) programın başlangıç noktasıdır.
+main methodu olmadan Java programı çalıştırılamaz. Ana methodun
+yapısı aşağıdaki gibidir
+
+public: Bu erişim belirleyicisidir. public olarak tanımlandığında,
+method herhangi bir yerden erişilebilir. Ana methodun her yerden
+erişilebilir olması gerektiği için public olarak tanımlanır.
+
+static: Bu keyword methodun sınıfın bir örneği (instance) oluşturulmadan
+çalıştırılmasını sağlar. Ana method static olarak tanımlandığı için,
+JVM (Java Virtual Machine) programı çalıştırırken herhangi bir nesne
+oluşturmadan doğrudan bu methodu çağırabilir.
+
+void: Bu ana methodun bir değer döndürmediğini belirtir.main: Methodun adıdır.
+JVM tarafından tanınan özel bir isimdir ve bu ismi değiştiremezsiniz.
+
+String[] args: Bu, methoda dışarıdan argüman geçişini sağlar. args,
+String türünde bir dizi (array) olarak tanımlanır ve komut satırından
+geçilen argümanları içerir. Programın başlangıcında komut satırından
+parametre almak istiyorsanız bu diziyi kullanabilirsiniz.
+
+
+JVM kodları çalışırken yazılmış classlar arasından başlayacağı noktayı
+bilmesi gerekmektedir. JVM, main metodu arar ve oradan çalışmaya başlar.
+
+Java'da ana method (main method) programın başlangıç noktasıdır.
+main methodu olmadan Java programı çalıştırılamaz. Ana methodun
+yapısı aşağıdaki gibidir
+
+public: Bu erişim belirleyicisidir. public olarak tanımlandığında,
+method herhangi bir yerden erişilebilir. Ana methodun her yerden
+erişilebilir olması gerektiği için public olarak tanımlanır.
+
+static: Bu keyword methodun sınıfın bir örneği (instance) oluşturulmadan
+çalıştırılmasını sağlar. Ana method static olarak tanımlandığı için,
+JVM (Java Virtual Machine) programı çalıştırırken herhangi bir nesne
+oluşturmadan doğrudan bu methodu çağırabilir.
+
+void: Bu ana methodun bir değer döndürmediğini belirtir.main: Methodun adıdır.
+JVM tarafından tanınan özel bir isimdir ve bu ismi değiştiremezsiniz.
+
+String[] args: Bu, methoda dışarıdan argüman geçişini sağlar. args,
+String türünde bir dizi (array) olarak tanımlanır ve komut satırından
+geçilen argümanları içerir. Programın başlangıcında komut satırından
+parametre almak istiyorsanız bu diziyi kullanabilirsiniz.

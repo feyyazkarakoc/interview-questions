@@ -1,0 +1,27 @@
+Java erişim belirleyiciler nedir?
+
+Java'da erişim belirleyiciler (access modifiers)
+dört ana kategoride sınıflandırılır ve bunlar sınıfların, metodların ve
+değişkenlerin erişim seviyelerini belirler. Bu erişim belirleyiciler
+şunlardır:
+
+public:Sınıflar: Her yerden erişilebilir. Eğer bir sınıf "public"
+olarak belirlenirse, aynı paketin dışındaki sınıflar ve kodlar tarafından da
+erişilebilir.Metotlar ve Değişkenler: Her yerden erişilebilir, yani sınıfın bulunduğu
+ paket dışındaki diğer paketlerden de erişilebilir.
+
+ protected:Sınıflar: Sınıf
+ düzeyinde kullanılamaz.Metotlar ve Değişkenler: Aynı paketteki sınıflar ve alt
+ sınıflar (inheritance yoluyla) tarafından erişilebilir. Bu, aynı paketteki diğer
+ sınıfların yanı sıra farklı paketlerdeki alt sınıfların da bu üyelere erişebileceği
+ anlamına gelir.
+
+ default (paket seviyesi):Sınıflar: Aynı paket içindeki sınıflar
+ tarafından erişilebilir. Eğer bir sınıf için hiçbir erişim belirleyici kullanılmazsa,
+  bu sınıf varsayılan (default) erişim seviyesine sahip olur.Metotlar ve Değişkenler:
+   Aynı paket içindeki sınıflar tarafından erişilebilir. Diğer paketlerden erişim mümkün
+    değildir. Hiçbir erişim belirleyici belirtilmediğinde bu erişim seviyesi kullanılır.
+
+    private:Sınıflar: Sınıf düzeyinde kullanılamaz.Metotlar ve Değişkenler: Yalnızca aynı
+    sınıf içindeki kod tarafından erişilebilir. Başka bir sınıftan erişim mümkün değildir,
+ hatta alt sınıflardan bile erişilemez.

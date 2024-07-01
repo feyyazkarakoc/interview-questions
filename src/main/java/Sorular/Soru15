@@ -1,0 +1,19 @@
+27. Java String Pool (Dize Havuzu) nedir?
+
+Java String Pool, Java’nın bellek yönetiminde yer alan bir optimizasyon
+tekniğidir. String Pool, JVM (Java Virtual Machine) tarafından yönetilen
+ve string nesnelerinin depolandığı özel bir bellek alanıdır. Bu mekanizma
+sayesinde aynı değere sahip string nesneleri tekrar tekrar oluşturulmaz,
+bunun yerine aynı nesne paylaşılır.
+
+String Pool’un Çalışma Prensibi:
+Java’da bir string  oluşturulduğunda,JVM önce String Pool'da bu
+değerde bir string olup olmadığını kontrol eder.
+Eğer varsa, yeni bir nesne oluşturmak yerine mevcut string
+nesnesine bir referans döner.Eğer yoksa, yeni bir string nesnesi
+oluşturur ve bu değeri String Pool'a ekler.
+
+Java String Pool, yığın belleğinde saklanan bir String havuzunu ifade eder.
+Yeni bir nesne yaratıldığında, String havuzu önce nesnenin havuzda var olup
+olmadığını kontrol eder. Eğer nesne havuzdaysa, aynı referans değişkene döndürülür.
+Aksi durumda, String havuzunda yeni nesne oluşturulur ve ilgili referans döndürülür.

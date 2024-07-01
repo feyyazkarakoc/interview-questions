@@ -1,0 +1,8 @@
+Break ve continue ifadeleri arasındaki fark nedir?
+
+Break: Switch ve loop ifadelerinde kullanılabilir ve
+bu deyimlerin yürütüldüğü an da sona ermesine neden olur.
+
+Continue: Yalnızca döngü ifadeleriyle kullanılabilir ve
+döngüyü sonlandırmaz, sadece döngünün bir sonraki yinelemeye
+atlamasına neden olur.

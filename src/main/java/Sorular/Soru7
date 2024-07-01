@@ -1,0 +1,25 @@
+Java’da pointerlar neden kullanılmaz?
+
+Pointer, bir değişkenin bellekteki adresini saklayan bir türdür.
+Yani, pointer bir nesnenin, değişkenin veya fonksiyonun
+bellek konumunu gösterir
+
+Java’da pointerlar neden kullanılmaz?
+
+Bellek Güvenliği: Pointerlar, bellek adreslerine doğrudan erişim sağladığı için,
+ yanlış bellek alanlarına erişim veya belleği yanlış şekilde manipüle etme riski taşır.
+ Bu, programın çökmesine veya güvenlik açıklarına yol açabilir. Java, bu tür riskleri
+ en aza indirmek için pointerları kullanmayı engeller.
+
+Basitlik ve Kolaylık: Java, programlamayı daha basit ve anlaşılır hale getirmek için
+pointerları soyutlar. Bellek yönetimi ve adresleme ile ilgili karmaşıklıkları gizler,
+böylece programcılar daha çok iş mantığına odaklanabilirler.
+
+Çöp Toplayıcı (Garbage Collector): Java'da bellek yönetimi, otomatik çöp toplayıcı
+tarafından yapılır. Çöp toplayıcı, kullanılmayan nesneleri otomatik olarak bellekten
+temizler, böylece programcıların manuel bellek yönetimi yapmasına gerek kalmaz.
+Pointerlar kullanıldığında, çöp toplayıcının etkili bir şekilde çalışması zorlaşır.
+
+Platform Bağımsızlığı: Java'nın "bir kez yaz, her yerde çalıştır" felsefesi, pointerların
+ kullanılmamasını gerektirir. Pointerlar, donanıma özgü bellek adreslemeleriyle çalıştığı için,
+  platform bağımsızlığı sağlamada zorluk yaratır.
