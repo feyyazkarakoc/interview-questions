@@ -1,4 +1,4 @@
-”public static void main(String[ ] args)” neden kullanmalıyız?
+Soru 5: ”public static void main(String[ ] args)” neden kullanmalıyız?
 
 Java'da ana method (main method) programın başlangıç noktasıdır.
 main methodu olmadan Java programı çalıştırılamaz. Ana methodun

@@ -1,4 +1,4 @@
-27. Java String Pool (Dize Havuzu) nedir?
+Soru 13: Java String Pool (Dize Havuzu) nedir?
 
 Java String Pool, Java’nın bellek yönetiminde yer alan bir optimizasyon
 tekniğidir. String Pool, JVM (Java Virtual Machine) tarafından yönetilen

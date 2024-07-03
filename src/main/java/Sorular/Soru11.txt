@@ -1,4 +1,4 @@
-Java’da equals () ve == arasındaki fark nedir?
+Soru 11:Java’da equals () ve == arasındaki fark nedir?
 
 Aralarındaki temek fark, birinin metot diğerinin operatör olmasıdır.
 

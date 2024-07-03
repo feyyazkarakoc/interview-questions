@@ -1,0 +1,9 @@
+Soru 14 : Springboot nasil JSON ile iletisime gecer?
+
+Spring Boot'un JSON ile iletişim kurma yolları aşağıdaki gibidir:
+
+Jackson: JSON'u Java nesnelerine ve Java nesnelerini JSON'a dönüştürmek için kullanılır.
+@RestController Anotasyonu: Kontrolör sınıfınızı bir REST API'ye dönüştürür ve JSON ile otomatik serileştirme ve deseriyalizasyon sağlar.
+@RequestBody ve @ResponseBody Anotasyonları: İstek gövdesinden JSON verisi almak ve yanıt olarak JSON veri göndermek için kullanılır.
+HttpMessageConverter: HTTP istek ve yanıtlarındaki veriyi uygun formata dönüştürmek için kullanılır.
+RestTemplate: Uygulamanızın diğer web servisleri ile iletişim kurmasını sağlar ve JSON verilerini göndermek veya almak için kullanılır.

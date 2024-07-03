@@ -1,4 +1,4 @@
-Veri tipleri ve değişkenler nelerdir?
+Soru 10:Veri tipleri ve değişkenler nelerdir?
 
 Yerel Değişkenler (Local Variables):Metotlar veya bloklar içinde
 tanımlanan ve sadece tanımlandıkları blok içinde erişilebilen değişkenlerdir.

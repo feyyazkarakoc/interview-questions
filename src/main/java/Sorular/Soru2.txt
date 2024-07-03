@@ -1,4 +1,4 @@
-Break ve continue ifadeleri arasındaki fark nedir?
+Soru 2 : Break ve continue ifadeleri arasındaki fark nedir?
 
 Break: Switch ve loop ifadelerinde kullanılabilir ve
 bu deyimlerin yürütüldüğü an da sona ermesine neden olur.

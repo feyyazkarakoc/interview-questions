@@ -1,4 +1,4 @@
-Java’da pointerlar neden kullanılmaz?
+Soru 7:Java’da pointerlar neden kullanılmaz?
 
 Pointer, bir değişkenin bellekteki adresini saklayan bir türdür.
 Yani, pointer bir nesnenin, değişkenin veya fonksiyonun

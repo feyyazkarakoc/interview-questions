@@ -1,4 +1,4 @@
-Java erişim belirleyiciler nedir?
+Soru 8:Java erişim belirleyiciler nedir?
 
 Java'da erişim belirleyiciler (access modifiers)
 dört ana kategoride sınıflandırılır ve bunlar sınıfların, metodların ve
