@@ -1,0 +1,13 @@
+Soru 15 : Javada static anahtar kelimesi nedir? Nasıl kullanılır?
+
+Java'da static anahtar kelimesi, sınıf düzeyinde değişkenler ve metotlar tanımlamak için kullanılır. static olarak tanımlanan üyeler, sınıfın örneklerinden bağımsız olarak çalışır ve sınıf yüklendiğinde hafızada yer alır.
+static anahtar kelimesi, sınıf düzeyinde ortak bir durum veya davranış tanımlamak için kullanışlıdır.
+
+static Değişkenler
+static değişkenler, sınıfın tüm örnekleri tarafından paylaşılan değişkenlerdir. Bu, tüm örneklerin aynı static değişkene erişeceği ve onu değiştirebileceği anlamına gelir.
+
+static Metotlar
+static metotlar, sınıfın örneği olmadan çağrılabilir. Bu metotlar, sadece static değişkenlere ve diğer static metotlara erişebilirler.
+
+static Bloklar
+static bloklar, sınıf yüklenirken bir kez çalıştırılır ve sınıfın static değişkenlerini başlatmak için kullanılır.
