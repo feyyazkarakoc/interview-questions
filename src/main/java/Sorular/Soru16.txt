@@ -1,0 +1,17 @@
+Soru 16 : Constructor Injection neden cok tercih edilir
+
+Constructor Injection, Spring framework’te bağımlılık yönetimi için yaygın olarak tercih edilen bir yöntemdir. İşte nedenleri:
+
+Immutable Dependencies (Değiştirilemez Bağımlılıklar): Constructor Injection, nesne oluşturulduğunda bağımlılıkları sağlar ve bu bağımlılıkların sonradan değiştirilememesini sağlar. Bu, nesnelerin daha güvenilir ve kararlı olmasını sağlar.
+
+Better for Testing (Test Etme Açısından Daha İyi): Constructor Injection, bağımlılıkları nesne oluşturma sırasında sağlar, bu da birim testlerinde sahte (mock) nesneler kullanmayı kolaylaştırır. Bu şekilde test edilebilirlik artar.
+
+Encapsulation (Kapsülleme): Constructor Injection, nesnelerin bağımlılıklarının dışarıdan değiştirilmesini engeller, bu da kapsüllemeyi iyileştirir.
+
+Required Dependencies (Gerekli Bağımlılıklar): Constructor Injection, bağımlılıkların nesne oluşturulmadan önce sağlanmasını zorunlu kılar. Bu, eksik bağımlılık sorunlarını daha erken aşamada fark etmenizi sağlar.
+
+Avoids Null Pointer Exceptions (Null Pointer İstisnalarını Önler): Bağımlılıklar nesne oluşturulurken sağlandığı için, null referans hatalarının önüne geçilmiş olur.
+
+Easier to Handle Circular Dependencies (Döngüsel Bağımlılıkların Yönetimi Daha Kolaydır): Constructor Injection kullanıldığında, döngüsel bağımlılıkları tespit etmek ve önlemek daha kolaydır.
+
+Özetle, Constructor Injection, nesnelerin daha sağlam, güvenilir ve test edilebilir olmasını sağlayarak yazılım geliştirme sürecinde önemli avantajlar sunar.
