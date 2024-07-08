@@ -1,0 +1,18 @@
+Soru 17 : Bellek Sızıntısı Nedir?
+
+Bellek sızıntısı (memory leak), bir bilgisayar programının artık kullanılmayan belleği serbest bırakmaması durumunda ortaya çıkan bir hatadır. Java'da bellek sızıntısı, genellikle programın nesneleri bellekten temizlemeyi unuttuğunda veya gereksiz yere uzun süre bellekte tuttuğunda meydana gelir. Java, bellek yönetimini Garbage Collector (Çöp Toplayıcı) adı verilen otomatik bir sistem aracılığıyla gerçekleştirir, ancak bazı durumlarda programcı hataları veya kötü tasarım nedeniyle bellek sızıntıları ortaya çıkabilir.
+
+Java'da Bellek Sızıntısının Yaygın Nedenleri:
+
+Stati̇k Değişkenler: Statik değişkenler bellekte uygulama sonlanana kadar kalır ve eğer büyük miktarda veri tutuyorlarsa, bellek sızıntısına neden olabilirler.
+Yanlış Kullani̇lan Veri̇ Yapilari: Büyük koleksiyonlar (List, Map gibi) içerisindeki nesneler, kullanılmadıkları halde referans tutulursa bellek sızıntısına neden olabilir.
+Event Listenerlar ve Callbackler: Bir nesne, event listener veya callback kaydederse ve bu kayıtları doğru bir şekilde temizlemezse, bu nesne bellekte kalabilir ve bellek sızıntısına neden olabilir.
+Dış Kaynaklarla Bağlantılar: Dosya, socket, database connection gibi dış kaynaklarla yapılan bağlantılar doğru bir şekilde kapatılmazsa bellek sızıntısına neden olabilirler.
+Threadler: Yanlış yönetilen threadler ve thread havuzları da bellek sızıntısına yol açabilir.
+Bellek sızıntılarını önlemek için dikkat edilmesi gereken bazı noktalar:
+
+Kullanılmayan nesneleri serbest bırakmak.
+Güçlü referanslardan kaçınmak ve gerekirse zayıf referanslar kullanmak (WeakReference, SoftReference).
+Koleksiyonları doğru yönetmek ve kullanılmayan öğeleri çıkarmak.
+Dış kaynak bağlantılarını (file, socket, database connection) kapatmak.
+Garbage Collector'ı zorlamak için System.gc() kullanmak yerine, doğru bellek yönetimi uygulamalarına odaklanmak.
