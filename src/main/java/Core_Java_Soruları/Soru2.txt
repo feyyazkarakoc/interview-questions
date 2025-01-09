@@ -1,0 +1,43 @@
+Primitive & Nonprimitive Data Tiplerini ve Bunların Arasındaki Farkları Açıklayınız
+
+
+1) "primitive" leri Java uretmistir ve 8 tanedir.
+
+4 tanesi tamsayılar içindir.Bellekte kapladıkları yere göre en küçükten en büyüğe doğru şöyledir:
+(byte (8 bit)
+ short (16 bit)
+ int (32 bit)
+ long (64 bit)
+
+ 2 tanesi ondalıklı sayılar içindir:
+ float (32 bit)
+ double (64 bit)
+
+ 1 tanesi semboller içindir:
+ char (16 bit) tanımlandıkları zaman tek tırnak içinde tanımlanırlar.
+
+ 1 tanesi
+ boolean (1 bit - true/false))
+
+"non-primitive" leri Java ve developerlar uretebilir, sinirsiz sayidadir.
+
+2) "primitive" ler Stack hafızada tutulur,"non-primitive" ler Heap hafızada tutulur.
+
+3) "primitive" lerin  default değerleri vardır ve null olamazlar.
+   Sayısal tipler: 0
+   boolean: false
+   char: \u0000 (boş karakter)
+
+
+   "non-primitive" ler null alabilirler.
+
+ 4) "primitive" ler kucuk harfle baslar, "non-primitive" ler buyuk harfle baslar.
+
+ 5) "primitive" ler memory de data type’larina gore sabit boyutta bellek kullanir."non-primitive" ler icin Java memory de buyuklugune gore degisen boyutlarda bellek kullanabilir.
+
+ 6) "primitive" ler sadece bizim atadigimiz degeri icerir,
+    "non-primitive" ler bizim atadigimiz degeri ve methodlari icerir.
+
+ 7) "primitive" ler bellekte doğrudan değeri tutar, adres tutmaz.
+    "non-primitive" ler  bellekte  referans (adres) tutar, nesne Heap bellekte saklanır. Java adresi takip ederek nesneye ulaşır.
+

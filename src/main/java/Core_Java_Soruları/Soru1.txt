@@ -1,0 +1,70 @@
+Java'da variable'lar nelerdir?
+
+1. Local Variables (Yerel Değişkenler)
+Tanım: Bir metodun, constructor’ın veya blok içerisindeki değişkenlerdir.
+ Yalnızca tanımlandıkları yerden erişilebilirler.
+Ömür: Metodun veya bloğun çalıştığı süre boyunca var olurlar. Metod/bloğun bitmesiyle bellekten silinirler.
+Başlatma Zorunluluğu: Local değişkenler başlatılmadan kullanılamaz. Derleme hatası alınır.
+Kapsam: Yalnızca tanımlandıkları blok içindedir.
+
+java
+
+public class LocalVariableExample {
+    public void printNumber() {
+        int number = 10; // Local değişken
+        System.out.println("Number: " + number);
+    }
+
+    public void anotherMethod() {
+        // number burada kullanılamaz.
+        // System.out.println(number); // HATA!
+    }
+}
+2. Instance Variables/Object Variables/Non-Static Variables (Örnek Değişkenler)
+Tanım: Sınıf içinde tanımlanmış ve herhangi bir metodun dışında bulunan değişkenlerdir. Her nesne, bu değişkenlerin kendi kopyasına sahiptir.
+Ömür: Nesne bellekte olduğu sürece var olur.
+Başlatma Zorunluluğu: Instance değişkenler başlatılmasa bile varsayılan değerlerle başlatılır.
+(Örnek: int için 0, boolean için false, String için null)
+Kapsam: Sınıf genelinde erişilebilir, ancak genellikle private olarak tanımlanır ve getter/setter ile erişilir.
+java
+
+public class InstanceVariableExample {
+    private int id; // Instance değişken
+    private String name; // Instance değişken
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+}
+3. Static Variables/Class Variables (Statik Değişkenler)
+Tanım: static anahtar kelimesiyle tanımlanır ve sınıfa aittir. Tüm nesneler tarafından paylaşılır, bu nedenle bellekte yalnızca bir kez oluşturulur.
+Ömür: Program çalıştığı sürece var olur.
+Başlatma Zorunluluğu: Başlatılmazsa varsayılan değer alır.
+Kapsam: Sınıf genelinde kullanılabilir. Nesne oluşturmadan erişilebilir.
+Kullanımı: Genelde sabit veriler veya sınıf genelinde paylaşılacak bilgiler için kullanılır.
+
+java
+
+public class StaticVariableExample {
+    public static int counter = 0; // Static değişken
+
+    public StaticVariableExample() {
+        counter++; // Her nesne oluşturulduğunda artırılır
+    }
+
+    public static void printCounter() {
+        System.out.println("Counter: " + counter);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new StaticVariableExample();
+        new StaticVariableExample();
+        StaticVariableExample.printCounter(); // Output: Counter: 2
+    }
+}

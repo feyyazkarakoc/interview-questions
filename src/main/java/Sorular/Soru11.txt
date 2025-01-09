@@ -1,9 +1,0 @@
-Soru 11:Java’da equals () ve == arasındaki fark nedir?
-
-Aralarındaki temek fark, birinin metot diğerinin operatör olmasıdır.
-
-(==) operatörünü referans karşılaştırması için ve equals() metotunu ise
- içerik karşılaştırması için kullanırız.
-
-(==) operatörü, her iki nesnenin bellek konumunlarının aynı olup olmadığını
-denetlerken equals() nesnelerdeki değerlerin karşılaştırılmasını değerlendirir.

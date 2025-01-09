@@ -1,0 +1,7 @@
+Java’da equals () ve == arasındaki fark nedir?
+
+Aralarındaki temek fark, birinin metot diğerinin operatör olmasıdır.
+
+(==) operatörü hem içerik (variable değeri) hem de değişkenin bellek içindeki yerini (adres)  karşılaştırır. Değikenlerin değer ve adresleri aynı ise true döndürür.
+
+equals() metodu ise  sadece içerik karşılaştırması yapar. Adreslerle ilgilenmez. Değişkenlerin değerleri aynı ise true döndürür.
