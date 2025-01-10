@@ -1,0 +1,32 @@
+Java'da final, finally, finalize() ne demektir?
+
+final bir keyword'tür, finally bir block'tır, finalize bir method'tur.
+
+final keywordü; variable,method ve classlarda kullanılır.
+
+final keywordü variable'larda kullanıldığında:
+ * O variable'a değer ataması yapmak zorundayız, başlatmak zorundayız yoksa hata verir.
+ * final son hali demek olduğu için değer atadığımızda o değeri bir daha değiştiremiyoruz.
+ * final variable'larda isimlendirme yaparken karakterlerin hepsinin büyük yazılması tavsiye edilir.Normalde camelCase kullanırız. Ama final variable'larda değişkenin tamamının büyük yazılması tavsiye edilir.
+
+ final keywordü method'larda kullanıldığında:
+ * final method'lar  override edilemezler, final method'lar body'si diğer classlar tarafından değiştirilemeyen method'lardır. Amacı metodun davranışının değiştirilmemesini sağlamaktır.
+
+ final keywordü class'larda kullanıldığında:
+ * final class'ların child class'ı olamaz.
+ * final class başka bir class tarafından extend edilemez dolayısıyla içindeki metotlar da override edilemez. Override işlemi, yalnızca bir sınıf başka bir sınıf extend ettiğinde (inheritance) mümkündür.
+
+ * final keywordü, güvenlik ve kodun tasarımına bağlılık sağlamak için kullanılır.
+
+ finally block:
+ * try'dan sonra kullanılır veya try-catch'ten sonra kullanılır.
+ * finally'nin içindeki kodlar exception fırlatılsa da fırlatılmasa da çalışır.
+ * Mutlaka çalıştırılması gereken kodları finally'nin içine yazarız.
+ * Güvenlik amacıyla açık dosyaların kapatılması, veritabanı bağlantılarının koparılması için kullanılır.
+ * try içinde System.exit(0) çağrılırsa java virtual machine kapanır,finally bloğu çalışmaz.
+
+ finalize() method:
+ * Object class'ının bir method'udur.
+ * Bir nesne çöp toplayıcı (garbage collector) tarafından bellekten kaldırılmadan  önce bu method varsayılan olarak çağrılr.
+ * finalize garbage collector'ın nesnenin kullandığı tüm kaynakları kaynakları serbest bırakmasına/kapatmasına yardımcı olur.Finalize işini yaptıktan sonra, garbage collector Java nesnesini ortadan kaldırır.
+ * Bu metot yalnızca bir kez çağrılır.

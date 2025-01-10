@@ -1,0 +1,13 @@
+Singleton Class nedir? Nasıl oluşturulur?
+
+1) Singleton bir design pattern'dir.(Tasarım kalıbı)
+Design pattern test edilmiş, başarısı ispat edilmiş kalıpların içinde kod yazmamızı sağlar.
+
+2) Singleton, bir classtan sadece bir obje üretilmesini garanti eder. İkinci obje oluşturamayız. Neden buna ihtiyaç var. Bir classtan bir obje üretilmesi yeterliyken, gereksiz yere obje üretilmesini engeller.Her obje bellekte yer kaplar.Lazım oldukça üretilmelidir. Bir süre sonra obje kullanılmadığında garbage collector'ın bunu silmesi gerekir.  Singleton, bellek tasarrufu yapar ve gereksiz obje üretilmesinin önüne geçer.
+
+3) Nasıl oluşturulur:
+    a) Sınıfın constructor'ını private yaparak başka sınıfların bu sınıftan obje üretmesini engellemek.
+    b) Bir tane classın data tipinde private static variable oluşturmak.
+    c) Bir tane classın data tipini döndüren public static metot oluşturmak (genelde getInstance() adı verilir). Bu metot o classın bir tane obje üretmesini temin etmelidir. Eğer obje null ise/obje yok ise obje oluşturmalıdır. Eğer obje varsa var olanı döndürmelidir. Bu metot bu classtan birden fazla obje oluşturulmamasını sağlıyor.
+
+4) Singleton deseni; veritabanı bağlantıları ve loglamada kullanılır. Ancak gereksiz kullanıldığında kodun bağımlılığını artırabilir,test edilebilirliği zorlaştırabilir, iş parçacığında (multi-threading) güvenli olması için özel önlemler gerektirir.
