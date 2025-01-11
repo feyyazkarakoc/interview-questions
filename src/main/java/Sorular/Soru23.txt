@@ -1,0 +1,29 @@
+Java’da Kalıtımı (Inheritance) Açıklar mısınız?
+
+İnheritance nedir :
+1) İnheritance, OOP'nin prensiplerinden birisidir.Bir sınıfın (üst sınıf) özelliklerini ve davranışlarını başka bir sınıfa (alt sınıf) aktarmasına inheritance denir. Ana amaç, kod tekrarını azaltmaktır.
+2) İnheritance kullandığımızda parent class ve child classlar oluşturmuş oluyoruz. Child classlar parent classın içindeki variableları, metotları ve constructorları kullanabilirler. Bir classın başka bir classtaki memberları kullanmasına izin vermiş oluyoruz.
+3) variableları, metotları ve constructorları kullanılan classlara parent class denir, diğer adı super classtır. variableları, metotları ve constructorları kullanan classlara child class denir, subclass da kullanılabilir.
+4) Bir classı başka bir classın childı yapmak için extend keywordünü kullanırız. Örneğin Cat extends Animal. Önce child sonra parent kullanılır.
+
+İnhritance Faydaları:
+1) Kodu tekrar tekrar kullanmamızı sağlar. Örneğin Animal classına eat metodu koyduk. Animal classının 500 childı var. 500 child eat metodunu kullanabilir. Bir metot yazdık, 500 defa yazılmadan tekrar tekrar kullanılabilir. Buna kodun yeniden kullanılabilirliği (code reusability) denir. Bu, kod tekrarını azaltır ve daha temiz bir yapı sağlar.(Class'larin 1 kez oluşturulması sayesinde uzun kodları tekrardan yazmak yerine kısa kodlamalar ile çalıştırılabilir. Substring() method'u 1 kere yazilmis ama surekli kullanabiliyoruz.)
+
+2) Modülerlik ve Organizasyon (Modularity and Organization) sağlar. İnheritance ilgili sınıfları, ortak bir parent altında toplar, kodun daha düzenli olmasını sağlar. Örneğin Animal classı altında Mamal classı, Mamal classı altında Dog ve Cat classını oluşturabiliriz, Bird classını ise doğrudan Animal altında oluşturabiliriz.  İnheritance classları  düzenli bir hiyerarşi içinde organize etmemize yardımcı olur.
+
+3) İnheritance sayesinde OOP'nin başka bir prensibi olan çok biçimliliği (Polymorphism) kullanabiliyoruz. Polimorfizm de bize şu imkanı sağlıyor:
+ * Child class, parenttaki metodu degistirerek kullanabilir.Her class, her obje kendine özgü özellikler geliştirebilir, ama yeni özellikler istemiyorsa parenttakini kullanabilir. Cat classı cat objesi için eat metodunu değiştirebilir. Cat farklı şekilde yemek istiyorsa eat metodunu değiştirebilir.
+
+ 4) Tamir ve kod geliştirmeyi (Maintenance and Update) kolaylaştırır.
+ Örneğin 500 child classta yazılmış eat metodunu tek tek değiştirmek yerine yalnızca parenttaki bir metodu güncellemek yeterlidir. Tamiri ve kod geliştirmeyi hızlı yapmamızı sağlar.
+
+ 5) Kodun Genişletilebilirliğini (Code Extensibility) sağlar, yani kod yazmamızı kolaylaştırır. Yeni classlar child yapılarak, mevcut parent sınıfları extend ederek kolayca oluşturulur.Var olan variable ve metotlara istenirse yeni özellikler ve davranışlar eklenebilir. Örneğin bir parent classa 30 metot, 40 variable yazdık. Child class parenttekini kullanabiliyor, extend yaptığımız anda 30 metot, 40 variable'e sahip oluyor. Zaman kazandıran bir özelliktir. Yeni yazdığımız boş bir classı bir anda özelliklere sahip hale getirir.
+
+ Önemli Özellikler:
+ 1) Java, single inheritance'ı destekler, yani bir classın sadece bir parent classı olabilir. Bir childın birden fazla parent classı olamaz. Bunu sebebi örneğin bir parent classtaki eat metodu farklı, diğer parent classtaki eat metodu farklı çalışabilir. Child class hangisini uygulayacağını bilemez. Bu kargaşaya sebep olacağı için java buna müsade etmez.
+ 2) Özelliklerini inherit etmek istedigimiz class'lar birden fazla ise (parent'lar) o durumda Java bize, Apartman tarzi yapilanma olusturmustur.( 'Multi Level Inheritance') Java bunu kabul eder.
+ 3) Java'da her sınıf, açıkça belirtilmese bile, Object sınıfını extend etmiştir. Bu, tüm sınıfların Object sınıfının özelliklerini ve metotlarını miras aldığı anlamına gelir.
+ 3) Miras alınan sınıfın protected ve public üyeleri alt sınıfta kullanılabilir. Private üyeler miras alınmaz.
+ 4) Constructor'lar miras alınmaz, ancak super() keywordü ile üst sınıfın constructor'ı çağrılabilir.
+
+

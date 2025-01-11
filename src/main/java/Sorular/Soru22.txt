@@ -28,5 +28,5 @@ final keywordü variable'larda kullanıldığında:
  finalize() method:
  * Object class'ının bir method'udur.
  * Bir nesne çöp toplayıcı (garbage collector) tarafından bellekten kaldırılmadan  önce bu method varsayılan olarak çağrılr.
- * finalize garbage collector'ın nesnenin kullandığı tüm kaynakları kaynakları serbest bırakmasına/kapatmasına yardımcı olur.Finalize işini yaptıktan sonra, garbage collector Java nesnesini ortadan kaldırır.
+ * finalize garbage collector'ın nesnenin kullandığı tüm kaynakları serbest bırakmasına/kapatmasına yardımcı olur.Finalize işini yaptıktan sonra, garbage collector Java nesnesini ortadan kaldırır.
  * Bu metot yalnızca bir kez çağrılır.
