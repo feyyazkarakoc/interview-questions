@@ -25,7 +25,7 @@ Gerçek hayatta gördüğümüz birçok nesnenin bilgisayar ortamına aktarıld�
  Java'da extends anahtar kelimesiyle uygulanır.
 
  Polymorphism (Çok Biçimlilik):
- Aynı metodun farklı sınıflarda farklı davranışlar sergilemesine denir.
+ Aynı isimli metodun farklı objelerle farklı davranışlar sergilemesine denir.
  İki türü vardır:
  Metot Overloading: Aynı isimde, farklı parametrelerle birden fazla metodun tanımlanması.
  Metot Overriding : Üst sınıftaki tanımlı bir metodun alt sınıfta değiştirilerek tanımlanması.
