@@ -1,0 +1,24 @@
+Polymorphism Nedir?
+
+Polymorphism nedir :
+ Polymorphism, OOP'nin prensiplerinden birisidir ve çok biçimlilik anlamına gelir. Polymorphism, iki şekilde yapılır:
+
+ Method Overriding (Runtime Polymorphism/Dinamik Polymorphism):
+ * Mutlaka inheritance var olmalıdır. Parent class olmadan, child class olmadan method overriding olmaz.
+ * Method Overridingde metodun ismi değiştirilmez, metodun parametreleri değiştirilmez, yani metod signature değiştirilmez  metodun bodysi değiştirilir.
+ * Method overriding child classın, parent classtaki metodu kendine göre özelleştirip değiştirmesidir. Örnek Animal classtaki eat metodu "Animals eats"i Dog classı "Dog eats meat" şeklinde değiştirmesi.
+ * Method override edildikten sonra child classtan üretilen obje metodun override edilmiş versiyonunu kullanır. Çünkü parent classtaki metod ezilmiş/geçersiz kılınmıştır. Bu, runtime polymorphism (dinamik polymorfizm) nedeniyle, hangi metodun çağrılacağı çalışma zamanında (runtime) belirlenir ve JVM, child sınıfındaki metodu kullanır.
+ * Method Overridingde aynı metot farklı objeler tarafından çağrıldığında farklı cevaplar verir. Çünkü parent classtaki metodu her child class kendine göre değiştirir. Bu da esneklik sağlar. Örneğin Animal classtaki eat metodunu Dog classı eats meat şeklinde, Sheep classı  eat grass şeklinde değiştirir. Dolayısıyla etot sonuçları da farklı olur.
+ * child classtaki override edilmiş metodun access modifierı parent classtaki metodun access modifierından dar olamaz.Alt sınıf metodu, en az üst sınıfın metodunun erişim belirleyicisi olmalı ya da daha genişi olmalıdır. Örneğin üst sınıftaki metot default ise alt sınıf private olamaz, default,protected ya da public olabilir.
+ * child classtaki override edilen metodun return type'ı ile parent classtaki metodun return type' ı arasında IS-A ilşkisi olmalıdır. Yani override metodun return type classı parent classtaki metodun return type classının childı olmalıdır.( child sınıfındaki dönüş tipi, parent sınıfındaki dönüş tipinin bir alt sınıfı (subclass) olmalıdır. Bu tür data tiplerine covariant return type denir.)
+ * private method'lar override edilemezler. Çünkü override edebilmek icin o methoda baska bir classtan ulasabilmek gerekir. Ama private methotlar baska classlardan ulasilamaz methotlardir.
+ * static metotlar override edilemez. Bunun nedeni,static metotların sınıfa bağlı olarak çalışmasıdır, nesneye değil. Static metotlar, sınıfın ismiyle erişilebilir, sınıfın herhangi bir örneği oluşturulmadan erişilebilir. Static metotlar, sınıflar arasında kalıtım yoluyla geçmez. Bir child sınıfı, static metotları miras alabilir, ancak override edemez.
+
+
+Method Overloading (Compile-Time Polymorphism/Statik Polymorphism):
+* Method Overloading'de metodun ismi değişmez, metodun parametreleri değişir ve bu işlem bir class içinde gerçekleşir. Burda inheritance'e gerek yoktur.
+* Method Overloading'de parametre sayısını, tipini ya da parametrelerin sıralamasını  değiştirerek overload yapabiliriz.
+* Method Overloading'de private olmak bir şeyi etkilemez. Çünkü overload işlemi aynı classta gerçekleşir. private methotlar overload edilebilir.
+* Derleyici, derleme zamanında kullanılan parametrelere bakarak hangi metodun çağrılacağına karar verir.
+* Aynı işi farklı veri tipleri veya parametre kombinasyonlarıyla yapabiliriz.
+* Kod okunabilirliğini ve yeniden kullanılabilirliği artırır.

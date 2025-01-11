@@ -10,7 +10,7 @@
   Java Virtual Machine (JVM) adlı bir makine tarafından yürütülür ve Java
   kodunun herhangi bir platformda çalışmasını sağlar.
 
-   Java ayrıca,birçok açık kaynak kütüphanesi ve araçları içerir.
+   Java birçok açık kaynak kütüphanesi ve araçları içerir.
 
 
 
