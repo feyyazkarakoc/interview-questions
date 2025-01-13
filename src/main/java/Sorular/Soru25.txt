@@ -1,0 +1,26 @@
+Encapsulation Nedir, Açıklar Mısınız?
+
+* Encapsulation, OOP'nin prensiplerinden birisidir. Bir sınıfın iç detaylarını saklamak ve bu iç detaylara sadece tanımlanmış metotlarla ulaşmak anlamına gelir.
+* Saklamak için kapsüllemek için private access modifierını kullanırız.
+* Sakladıktan sonra görmek istersek, datayı okumak istersek  getter metotlarını kullanırız.
+* Sakladıklarımızı değiştirmek/güncellemek istersek setter metotlarını kullanırız.
+
+
+Faydaları:
+ 1) Veri Gizleme (Data Hiding):Fieldları private yaparak datayı dışarıdan gizler.Bu, verilere doğrudan erişimi engeller ve verilere yalnızca tanımlı metotlarla erişilebilmesini sağlar.
+ 2) Veri Koruma (Data Protection): Datayı gizleyince dışarıdan hatalı müdahalelerdenden korumuş oluruz. Encapsulation, setter metotlarıyla verilerin yalnızca geçerli ve doğru değerlerle güncellenmesini garanti eder.
+ 3) Kod Esnekliği (Code Flexibility): Encapsulation, bir sınıfın iç yapısını değiştirme esnekliği sağlar.Çünkü dış dünyaya sınıfın yalnızca public bölümlerini açıyor. Böylece gizlenen/private olan iç yapıda yapılan değişiklikler dış dünyaya açık olan public kodları etkilemez.
+ 4) Kod Bakımı (Code Maintainability): Encapsulation, ilişkili field'ları ve bu field'lara yönelik metotları, tek bir sınıfta toplayarak kodun düzenini, okunabilirliğini ve bakımını kolaylaştırır. Bu yaklaşım, kodun modülerliğini artırarak her sınıfın yalnızca tek bir işleve,kendi sorumluluğuna odaklanmasını sağlar (Single Responsibility Principle). Projede çalışan biri ilgili kodu hızlıca bulur ve anlar.  Örneğin, Student sınıfında öğrenciyle ilgili tüm veri ve metotların bir arada bulunduğu için, kodun anlaşılması ve üzerinde değişiklik yapılması kolaydır. Encapsulation kullanılmazsa, fieldlar ve metotlar farklı yerlerde tutulduğu için özellikle büyük projelerde karmaşa olur ve bakım zorlaşır.
+ 5) Erişim Kontrolü (Access Kontrol) : Kapsülleme, sınıf üyelerinin  erişimine sınırlama imkanı getiriyor.  Hangi datalara ulaşılsın, hangilerine ulaşılmasın istiyorsak  erişim düzenleyicileri (private, protected, ve public) ile bunu belirleme gücümüz var. Bu sayede yalnızca gerekli ve güvenli olan bölümlerin dış dünyaya sunulması sağlanır.
+
+
+4. maddeye ek:
+ *Encapsulation, ilişkili verileri ve davranışları tek bir sınıfta kapsülleyerek kod bakımını kolaylaştırır. Bu yaklaşım, kod organizasyonunu, okunabilirliği ve yeniden kullanılabilirliği artırır. Kodun zaman içinde anlaşılması ve bakım yapılması daha kolay hale gelir.
+
+   *Encapsulation, bir sınıfın yalnızca kendi sorumluluğuna odaklanmasını sağlar. İlişkili field'ları ve bu field'lara yönelik metotları, tek bir yerde toplandığında kodun modülerliği artar. Bu modüler yapı, bir sınıfın sadece bir işleve sahip olmasını (Single Responsibility Principle) sağlar.  Bu, kodun anlaşılmasını kolaylaştırır. Örneğin Student classında  öğrenciyle ilgili veriler ve davranışlar başka bir yere dağılmadığı için hem anlaması hem de üzerinde değişiklik yapması kolaydır.
+
+   *Encapsulation ile veri ve davranışların aynı sınıfta toplanması, kodun daha düzenli bir yapıya sahip olmasını sağlar. Projede çalışan biri ilgili kodu hızlıca bulur ve anlar.Eğer encapsulation kullanılmaz ve veriler bir yerde, davranışlar başka bir yerde tutulursa, bakım sırasında hangi kodun hangi veriyle ilişkili olduğunu anlamak zorlaşır. Bu durum, özellikle büyük projelerde karmaşaya neden olur. Örneğin Student classında öğrenciyle ilgili bir değişiklik gerektiğinde, ilgili kodların bulunmasını ve değiştirilmesini zorlaştırır.
+   *Encapsulation, bir sınıfın yalnızca belirli bir işleve odaklanmasını sağlayarak kodun okunabilirliğini artırır. Bir sınıf, kendine ait verileri ve metotları içerdiği için, bu sınıfa bakan bir geliştirici sınıfın ne işe yaradığını ve nasıl çalıştığını kolayca anlayabilir.
+
+
+

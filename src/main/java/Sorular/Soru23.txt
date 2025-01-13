@@ -9,10 +9,9 @@ Java’da Kalıtımı (Inheritance) Açıklar mısınız?
 İnhritance Faydaları:
 1) Kodu tekrar tekrar kullanmamızı sağlar. Örneğin Animal classına eat metodu koyduk. Animal classının 500 childı var. 500 child eat metodunu kullanabilir. Bir metot yazdık, 500 defa yazılmadan tekrar tekrar kullanılabilir. Buna kodun yeniden kullanılabilirliği (code reusability) denir. Bu, kod tekrarını azaltır ve daha temiz bir yapı sağlar.(Class'larin 1 kez oluşturulması sayesinde uzun kodları tekrardan yazmak yerine kısa kodlamalar ile çalıştırılabilir. Substring() method'u 1 kere yazilmis ama surekli kullanabiliyoruz.)
 
-2) Modülerlik ve Organizasyon (Modularity and Organization) sağlar. İnheritance ilgili sınıfları, ortak bir parent altında toplar, kodun daha düzenli olmasını sağlar. Örneğin Animal classı altında Mamal classı, Mamal classı altında Dog ve Cat classını oluşturabiliriz, Bird classını ise doğrudan Animal altında oluşturabiliriz.  İnheritance classları  düzenli bir hiyerarşi içinde organize etmemize yardımcı olur.
+2) Modülerlik ve Organizasyon (Modularity and Organization) sağlar. İnheritance birbiri ile alkalı sınıfları, ortak bir parent altında toplar, kodun anlaşılır olmasını sağlar. Biri dışardan kodumuza baktığında bu hiyerarşiyi gördüğünde kodumuzu anlar. İnheritance buna yardım eder. Örneğin Animal classı altında Mamal classı, Mamal classı altında Dog ve Cat classını oluşturabiliriz, Bird classını ise doğrudan Animal altında oluşturabiliriz.
 
-3) İnheritance sayesinde OOP'nin başka bir prensibi olan çok biçimliliği (Polymorphism) kullanabiliyoruz. Polimorfizm de bize şu imkanı sağlıyor:
- * Child class, parenttaki metodu degistirerek kullanabilir.Her class, her obje kendine özgü özellikler geliştirebilir, ama yeni özellikler istemiyorsa parenttakini kullanabilir. Dog classı  eat metodunu değiştirebilir. Dog farklı şekilde yemek istiyorsa eat metodunu değiştirebilir.
+3) İnheritance sayesinde OOP'nin başka bir prensibi olan çok biçimliliği (Polymorphism) kullanabiliyoruz. Polimorfizm de bize şu imkanı sağlıyor: Child class, parenttaki metodu degistirerek kullanabilir.Her class, her obje kendine özgü özellikler geliştirebilir, ama yeni özellikler istemiyorsa parenttakini kullanabilir. Dog classı eat metodunu değiştirebilir. Dog farklı şekilde yemek istiyorsa eat metodunu değiştirebilir.
 
  4) Tamir ve kod geliştirmeyi (Maintenance and Update) kolaylaştırır.
  Örneğin 500 child classta yazılmış eat metodunu tek tek değiştirmek yerine yalnızca parenttaki bir metodu güncellemek yeterlidir. Tamiri ve kod geliştirmeyi hızlı yapmamızı sağlar.

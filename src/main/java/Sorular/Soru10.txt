@@ -10,7 +10,7 @@ Gerçek hayatta gördüğümüz birçok nesnenin bilgisayar ortamına aktarıld�
  Nesneler ve Sınıflar  Nesne tabanlı programlamanın temel yapı taşlarıdır.
  Sınıf, bir şablondur. Nesneler ise sınıfın örnekleridir.
 
- Temel amacı, kodun daha modüler, yeniden kullanılabilir, anlaşılır ve bakımı kolay olmasını sağlamaktır.OOP sayesinde büyük projeler daha yönetilebilir hale gelir.
+ Temel amacı, kodun daha modüler, yeniden kullanılabilir, anlaşılır ve bakımı kolay olmasını sağlamaktır.OOP sayesinde büyük projeler daha yönetilebilir hale geldi.
 
  OOP dört ana prensip üzerine kuruludur:
 
@@ -23,6 +23,7 @@ Gerçek hayatta gördüğümüz birçok nesnenin bilgisayar ortamına aktarıld�
  Bir sınıfın  özelliklerini ve davranışlarını başka bir sınıfa  aktarmasına denir.
  Amaç, kod tekrarını azaltmaktır.
  Java'da extends anahtar kelimesiyle uygulanır.
+
 
  Polymorphism (Çok Biçimlilik):
  Aynı isimli metodun farklı objelerle farklı davranışlar sergilemesine denir.
