@@ -1,10 +1,11 @@
 Java’da Kalıtımı (Inheritance) Açıklar mısınız?
 
 İnheritance nedir :
-1) İnheritance, OOP'nin prensiplerinden birisidir. Bir sınıfın (üst sınıf) özelliklerini ve davranışlarını başka bir sınıfa (alt sınıf) aktarmasına inheritance denir. Ana amaç, kod tekrarını azaltmaktır.
-2) İnheritance kullandığımızda parent class ve child classlar oluşturmuş oluyoruz. Child classlar parent classın içindeki variableları, metotları ve constructorları kullanabilirler. Bir classın başka bir classtaki memberları kullanmasına izin vermiş oluyoruz.
-3) variableları, metotları ve constructorları kullanılan classlara parent class denir, diğer adı super classtır. variableları, metotları ve constructorları kullanan classlara child class denir, diğer adı subclasstır.
-4) Bir classı başka bir classın childı yapmak için extend keywordünü kullanırız. Örneğin Cat extends Animal. Önce child sonra parent kullanılır.
+1) İnheritance, OOP'nin prensiplerinden birisidir.
+2) Bir sınıfın (üst sınıf) özelliklerini ve davranışlarını başka bir sınıfa (alt sınıf) aktarmasına inheritance denir. Ana amaç, kod tekrarını azaltmaktır.
+3) İnheritance kullandığımızda parent class ve child classlar oluşturmuş oluyoruz. Child classlar parent classın içindeki variableları, metotları ve constructorları kullanabilirler. Bir classın başka bir classtaki memberları kullanmasına izin vermiş oluyoruz.
+4) variableları, metotları ve constructorları kullanılan classlara parent class denir, diğer adı super classtır. variableları, metotları ve constructorları kullanan classlara child class denir, diğer adı subclasstır.
+5) Bir classı başka bir classın childı yapmak için extend keywordünü kullanırız. Örneğin Cat extends Animal. Önce child sonra parent kullanılır.
 
 İnhritance Faydaları:
 1) Kodu tekrar tekrar kullanmamızı sağlar. Örneğin Animal classına eat metodu koyduk. Animal classının 500 childı var. 500 child eat metodunu kullanabilir. Bir metot yazdık, 500 defa yazılmadan tekrar tekrar kullanılabilir. Buna kodun yeniden kullanılabilirliği (code reusability) denir. Bu, kod tekrarını azaltır ve daha temiz bir yapı sağlar.(Class'larin 1 kez oluşturulması sayesinde uzun kodları tekrardan yazmak yerine kısa kodlamalar ile çalıştırılabilir. Substring() method'u 1 kere yazilmis ama surekli kullanabiliyoruz.)

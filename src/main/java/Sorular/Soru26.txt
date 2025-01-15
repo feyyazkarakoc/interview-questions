@@ -1,0 +1,33 @@
+Abstraction Nedir, Açıklar Mısınız?
+
+* Java'da abstraction (soyutlama), OOP'nin prensiplerinden birisidir.
+* Abstraction, karmaşıklığı gizlemek ve yalnızca önemli bilgileri kullanıcıya sunmak anlamına gelir.
+* Kullanıcıya nasıl yapıldığına değil ne yapıldığına odaklanmasını sağlar.
+* Java'da abstraction, abstract class ve interface kullanılarak gerçekleştirilir:
+
+Abstract Classlar:
+1) Bir abstract classtan obje üretemeyiz. Çünkü abstrac classta  bodysi olmayan metotlar aslında eksik metotlar  vardır. Obje üretmeye kalktığımızda eksik objeler üretmiş oluyoruz. Java applicationu, eksik objelerden korumak için abstract classtan obje üretmeye müsade etmiyor.
+2) Abstract class hem concret metot hem abstract metot içerir. Concret metot hem concret classta hem abstract classta yer alabilirken,abstract metot sadece abstract classta olur.
+3) Abstract metotların concret child classlar tarafından overide edilmesi zorunludur. Çünkü eksik metottur, tamamlanması gerekir.
+4) İçinde değişkenler, constructor ve concret metot bulunabilir. Child classlar concret metotları isterse override edebilirler, isterse override etmeden kullanabilirler, isterse de kullanmazlar. Değişkenler herhangi bir erişim belirleyiciye (private, protected, public) sahip olabilir.
+5) Bazı metotları tüm child classlar için mecburi ve ortak yapmak istiyorsak abstrac class ve abstract metot yaparız.
+6) abstract anahtar kelimesi ile tanımlanır.
+7) Abstract clasların içinde static metotlar olabilir. Abstract classların constructorları vardır. Ama java constructorları obje üretemez hale getirmiştir.
+8 Abstract clasların içinde, child clasların bunu değiştirmesini önlemek için final metotlar olabilir. Ama abstract metotlar final olamazlar, çünkü final methodlar override edilemiyor.
+9)  Abstract bir class’in abstract bir child’i olabilir ve abstract child parent’inin methodlarini override etmek zorunda degildir ama isterse de edebilir.
+
+
+İnterfaceler:
+1) İçindeki bütün metotlar abstract metotlardır. İstisna olarak concrete method koymak gerekirse;
+   a) default keywordunu kullanarak bunu yapabiliriz
+   b) static keywordunu kullanarak bunu yapabiliriz
+   default keywordunu kullanarak olusturdugumuz concrete methodlara interface’in child
+   class’indan object olusturarak ulasilabilir.
+   static keywordunu kullanarak olusturdugumuz concrete methodlara ulasmak icin object olusturmaya gerek yoktur. Interface ismi yeterlidir.
+2) İnterface anahtar kelimesi ile tanımlanır.İnterface’leri  parent yapmak icin ‘implements’ keyword’u child icinde, 'extends' keyword’u interface içinde kullanılır.
+3) interface’lerden obje olusturamayız.constructor’lari yoktur. Yine abstract classtaki aynı sebepten bodysiz metotlardan dolayı  eksik yapilar olduğu için java obje üretmeyi yasaklamıştır.
+4) Javada multiple inheritance mümkün değildir. Bir classın birden fazla parentı olamaz. Ama bazen bir class için birden fazla parent classa ihtiyaç duyarız. İşte java bu sebeple interfaceleri üretmiştir. Bir childa birden fazla interfaceı  implement edebilir.
+5)  Child class parent olarak kabul ettiği bütün interfaceler içindeki bütün metotları override etmesi zorunludur.
+6) İnterface icindeki method’lar otomatik olarak ‘public’ ve  ‘abstract’ dir, bu yuzden interface’lerde method olustururken access modifier ve ‘abstract’ keyword’unu yazmayiz.(static degillerdir)
+7)) Interface’ler de variable’lar default olarak public static final’dir. Yani yazmasak da olur. final oldukları için başlatmak zorundayız ve değiştirilemezler. static oldukları için interface ismi ile variable'lara ulaşırız.
+8) Bir interface birden fazla interface'i extend edebilir. Bir sınıf birden fazla interface'i implement edebilir. Bir sınıf yalnızca bir sınıfı extend edebilir.

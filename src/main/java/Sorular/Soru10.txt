@@ -1,38 +1,33 @@
 Nesne Yönelimli Programlama (OOP) Nedir? Özellikleri Nelerdir?
 
-Object Oriented Programming yani Nesne Yönelimli Programlama, yazılım tasarımını işlevler ve mantık yerine, nesneler etrafında düzenleyen bir modeldir.
-Gerçek hayatta gördüğümüz birçok nesnenin bilgisayar ortamına aktarıldığı bir programlama şeklidir.Bir nesnenin rengi, ismi, üretim yılı gibi özelliklerinin bilgisayar ortamında gösterilmesi buna örnektir.
-
- Temeli, 1960’lı yıllarda atılmıştır. Geleneksel programlama yöntemlerinden farklı olarak sınıf-nesne kavramlarını içerir.
- Sınıf ve nesne kavramları soyut bilgisayar bilimleri kavramlarını; yaşadığımız dünya ile bağdaştırarak somutlaştırdı. Bu somutlaştırma  karmaşık problemleri, insan zihninin daha kolay algılayabileceği seviyeye indirdi.
-
-
- Nesneler ve Sınıflar  Nesne tabanlı programlamanın temel yapı taşlarıdır.
+1) Object Oriented Programming yani Nesne Yönelimli Programlama, yazılım tasarımını işlevler ve mantık yerine, nesneler etrafında düzenleyen bir modeldir.
+2) Gerçek hayatta gördüğümüz birçok nesnenin bilgisayar ortamına aktarıldığı bir programlama şeklidir.
+3) Bir nesnenin rengi, ismi, üretim yılı gibi özelliklerinin bilgisayar ortamında gösterilmesi buna örnektir.
+4) Temeli, 1960’lı yıllarda atılmıştır. Geleneksel programlama yöntemlerinden farklı olarak sınıf-nesne kavramlarını içerir.
+5) Sınıf ve nesne kavramları soyut bilgisayar bilimleri kavramlarını; yaşadığımız dünya ile bağdaştırarak somutlaştırdı. Bu somutlaştırma  karmaşık problemleri, insan zihninin daha kolay algılayabileceği seviyeye indirdi.
+6) Nesneler ve Sınıflar  Nesne tabanlı programlamanın temel yapı taşlarıdır.
  Sınıf, bir şablondur. Nesneler ise sınıfın örnekleridir.
+7) Temel amacı, kodun daha modüler, yeniden kullanılabilir, anlaşılır ve bakımı kolay olmasını sağlamaktır.OOP sayesinde büyük projeler daha yönetilebilir hale geldi.
+8)OOP dört ana prensip üzerine kuruludur:
 
- Temel amacı, kodun daha modüler, yeniden kullanılabilir, anlaşılır ve bakımı kolay olmasını sağlamaktır.OOP sayesinde büyük projeler daha yönetilebilir hale geldi.
-
- OOP dört ana prensip üzerine kuruludur:
-
- Encapsulation (Kapsülleme):
- Bir sınıfın fieldlarına kontrollü bir şekilde erişim sağlamak için kullanılır.
+ - Encapsulation (Kapsülleme):
+ Bir sınıfın iç detaylarını saklamak ve bu iç detaylara sadece tanımlanmış metotlarla ulaşmak anlamına gelir.
  Getter ve Setter metotları ile uygulanır.
- Amaç, dışarıdan gelen hatalı müdahaleleri önlemektir.
+ Amaç, dışarıdan gelen hatalı müdahaleleri önlemektir/bir sınıfın fieldlarına kontrollü bir şekilde erişim sağlamaktır.
 
- Inheritance (Kalıtım):
+ - Inheritance (Kalıtım):
  Bir sınıfın  özelliklerini ve davranışlarını başka bir sınıfa  aktarmasına denir.
- Amaç, kod tekrarını azaltmaktır.
  Java'da extends anahtar kelimesiyle uygulanır.
+ Amaç, kod tekrarını azaltmaktır.
 
-
- Polymorphism (Çok Biçimlilik):
+ - Polymorphism (Çok Biçimlilik):
  Aynı isimli metodun farklı objelerle farklı davranışlar sergilemesine denir.
  İki türü vardır:
  Metot Overloading: Aynı isimde, farklı parametrelerle birden fazla metodun tanımlanması.
  Metot Overriding : Üst sınıftaki tanımlı bir metodun alt sınıfta değiştirilerek tanımlanması.
  Amaç, esneklik sağlamaktır.
 
- Abstraction (Soyutlama):
- Karmaşıklığı gizlemek ve yalnızca önemli detayları göstermek anlamına gelir.
+ - Abstraction (Soyutlama):
+ Karmaşıklığı gizlemek ve yalnızca önemli bilgileri kullanıcıya sunmak anlamına gelir.
  abstract sınıflar veya interfaceler ile uygulanır.
  Amaç, gereksiz detayları kullanıcıdan saklamaktır.
