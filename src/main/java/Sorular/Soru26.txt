@@ -29,5 +29,5 @@ Abstract Classlar:
 4) Javada multiple inheritance mümkün değildir. Bir classın birden fazla parentı olamaz. Ama bazen bir class için birden fazla parent classa ihtiyaç duyarız. İşte java bu sebeple interfaceleri üretmiştir. Bir childa birden fazla interfaceı  implement edebilir.
 5)  Child class parent olarak kabul ettiği bütün interfaceler içindeki bütün metotları override etmesi zorunludur.
 6) İnterface icindeki method’lar otomatik olarak ‘public’ ve  ‘abstract’ dir, bu yuzden interface’lerde method olustururken access modifier ve ‘abstract’ keyword’unu yazmayiz.(static degillerdir)
-7)) Interface’ler de variable’lar default olarak public static final’dir. Yani yazmasak da olur. final oldukları için başlatmak zorundayız ve değiştirilemezler. static oldukları için interface ismi ile variable'lara ulaşırız.
+7) Interface’ler de variable’lar default olarak public static final’dir. Yani yazmasak da olur. final oldukları için başlatmak zorundayız ve değiştirilemezler. static oldukları için interface ismi ile variable'lara ulaşırız.
 8) Bir interface birden fazla interface'i extend edebilir. Bir sınıf birden fazla interface'i implement edebilir. Bir sınıf yalnızca bir sınıfı extend edebilir.
