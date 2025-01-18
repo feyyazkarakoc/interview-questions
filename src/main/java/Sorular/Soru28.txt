@@ -1,24 +1,27 @@
 Java'da Static Keyword Nedir, Açıklayınız ?
 
-* static keyword, Java'da  class üyelerini (yani metot ve variableları) nesneye değil, doğrudan sınıfa bağlamak için kullanılır. Yani, bir static eleman, sınıfın herhangi bir örneği/instance oluşturulmadan  kullanılabilir.
-* static üyeler classtan üretilen bütün (instance) objeler için ortaktır/paylaşılır.
-* static variable'a ve static metoda classın ismi ile ulaşılır.
-* static bir üye değiştirilirse tüm objeler değişiklikten etkilenir.
-
-static variable/class variable
-* Eğer bir sınıfa ait değişkenlerin başına "static" yazılırsa, o değişkenler artık sınıf değişkeni olurlar.
-* Sınıf değişkeni olarak tanımlanan değişkenler, her nesne oluşturduğumuzda ayrı ayrı oluşmazlar. Sınıfa ait ne kadar nesne olursa olsun, sınıf değişkenleri 1 tanedir.
-* Sınıf değişkenlerinin bir diğer özelliği ise, ilgili sınıfa ait hiç nesne oluşturulmasa bile bellekte yer kaplarlar.
-* Sınıfın tüm örnekleri aynı bellek alanını kullanarak bu static değişkene erişebilir ve onu değiştirebilir.
-* static değişkenler global durumları veya sabit değerleri saklamak için kullanılır.
+1) static keyword, Java'da  class üyelerini (yani metot ve variableları) nesneye değil, doğrudan sınıfa bağlamak için kullanılır. Yani, static üye, sınıfın herhangi bir örneği oluşturulmadan kullanılabilir.
+2) static üyeler classtan üretilen bütün objeler için ortaktır.
+3) static bir üye değiştirilirse tüm objeler değişiklikten etkilenir.
+3) static variable'a ve static metoda classın ismi ile ulaşılır.
 
 
-static method/class methods
-* Eğer sınıfa ait metotlardan bir yada birden fazlasının önüne "static" deyimi yazılırsa, o metotlar sınıf metodu olurlar.
-* Sınıf metotlarının en önemli özelliği, ilgili sınıfa ait nesne oluşturmadan sınıf metodu çağırılabilir.Bir sınıf değişkeninin, henüz nesne oluşturulmasa da bellekte fiziksel olarak yer kapladığını söylemiştik. Bir sınıf metodunun ise nesne oluşturulmadan, sınıf adı üzerinden çağrılabildiğini belirttik. Bu durumda, nesne var olmadan çağrılabilecek olan sınıf metotları, nesne var olmadan bellekte var olamayan olgu değişkenlerine erişmesi olanaklı değildir. Benzer şekilde, nesne var olmadan bellekte var olan sınıf değişkenleri üzerinde işlem yapan yöntemlerin, nesne var olmadan çağrılabilmeleri gerekir.
-* static metotlar, sınıfın örneği olmadan doğrudan sınıf adı üzerinden çağrılabilir.
-* Bu metotlar, sadece static değişkenlere ve diğer static metotlara erişebilirler.
+static variables/class variables
+1) Eğer bir sınıfa ait değişkenlerin başına "static" yazılırsa, o değişkenler artık sınıf değişkeni olurlar.
+2) Sınıf değişkeni olarak tanımlanan değişkenler, her nesne oluşturduğumuzda ayrı ayrı oluşmazlar. Sınıfa ait ne kadar nesne olursa olsun, sınıf değişkenleri 1 tanedir.
+3) Sınıf değişkenleri sınıfa ait hiç nesne oluşturulmasa bile bellekte yer kaplarlar. Yani, sınıfın hiçbir nesnesi yoksa bile static değişkenler bellekte var olur.
+4) Sınıfın tüm örnekleri aynı bellek alanını kullanarak bu static değişkene erişebilir ve onu değiştirebilir.
+5) static değişkenler global durumları veya sabit değerleri saklamak için kullanılır.
+
+
+static methods/class methods
+1) Eğer sınıfa ait metotların başına "static"  yazılırsa, o metotlar sınıf metodu olurlar.
+2) static metotlar, sınıf yüklendiğinde bellekte yer alır. Normalde Java'da bir sınıfın özelliklerini veya metotlarını kullanabilmek için o sınıftan bir nesne oluşturmamız gerekir.Ancak, bir metot static olarak tanımlanırsa, bu metodu çağırmak için sınıfın nesnesini oluşturmanıza gerek yoktur.
+3) Doğrudan sınıf adı üzerinden çağrılabilir.
+4) Bu metotlar, sadece static değişkenlere ve diğer static metotlara erişebilirler. Çünkü bir nesne olmadan, nesneye ait  değişkenlere (instance variable) erişim mümkün değildir. Bu değişkenler ancak bir nesneyle birlikte bellekte var olur.  static metotlar nesneye ait değişkenlere erişemez, çünkü bu değişkenler yalnızca bir nesne oluşturulduğunda bellekte yer alır. Nesne var olmadan bellekte var olamayan nesne değişkenlerine erişmesi veya  henüz var olmayan bir nesnenin bir fieldına veya metoduna ulaşamayız.
+
 
 static Bloklar
-* static bloklar, sınıf yüklenirken bir kez çalıştırılır ve sınıfın static değişkenlerini başlatmak için kullanılır.
-* Sınıf değişkenlerinin ilk değerlerinin verilmesi için kurucu metotlar kullanabiliriz. Ancak sınıfa ait statik değişkenlerinin ilk değerlerini kurucu içinde vermeye çalışmak yanlış olabilir. Çünkü sınıf değişkenleri, hiç nesne oluşturulmamış olsa da kullanılabilmektedir. Sınıf değişkenleri ile ilgili olarak bir defaya özel olmak üzere işletilmesi istenen kod kesimleri static kod bloklarında kodlanabilir. Static kod blokları, sınıf belleğe yüklendiği anda işletilir. Böylece sınıf değişkenleri bellekte oluşturuldukları anda ilk değerlerini almış olurlar.
+1) static bloklar, sınıf yüklenirken bir kez çalıştırılır ve static değişkenlerin başlangıç değerlerini atamak için kullanılır.
+2) Sınıf değişkenlerinin (instance variableların) ilk değerlerinin verilmesi için kurucu metotlar (constructorlar) kullanabiliriz. Ancak sınıfa ait statik değişkenlerinin ilk değerlerini constructor içinde vermeye çalışmak yanlış olabilir. Çünkü static değişkenler, hiç nesne oluşturulmamış olsa da kullanılabilmektedir.
+3) Sınıf değişkenleri ile ilgili olarak bir defaya özel olmak üzere işletilmesi istenen kodlar static kod bloklarında yazılır. Static kod blokları, sınıf belleğe yüklendiği anda işletilir. Böylece static değişkenler bellekte oluştukları anda ilk değerlerini almış olurlar.
