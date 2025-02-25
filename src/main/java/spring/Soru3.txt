@@ -1,0 +1,27 @@
+ Spring boot nedir?
+
+Spring Boot, Spring ekosisteminde hızlı ve kolay uygulama geliştirmeyi sağlayan bir projedir. Temel amacı, minimum
+konfigürasyon ile çalışan bir Spring uygulaması oluşturmaktır.
+
+Spring Boot'un temel özellikleri:
+
+Auto-configuration (Otomatik Yapılandırma): Classpath'teki JAR'ları ve yapılandırmaları analiz ederek uygulamayı
+otomatik yapılandırır. Örneğin classpath'te H2 veritabanı varsa, Spring Boot otomatik olarak bir H2 veritabanı
+yapılandırır.
+Starter Dependencies: Geliştirmeyi basitleştiren hazır bağımlılık paketleri sunar. Örneğin, spring-boot-starter-web ile web uygulaması için gereken tüm bağımlılıklar otomatik olarak eklenir.
+Embedded Server: Gömülü sunucu (Tomcat, Jetty, Undertow) içerir, böylece harici bir sunucu yapılandırmaya gerek kalmaz.
+Actuator: Uygulamanın durumunu, metriklerini ve sağlığını izleme imkanı verir.
+Spring CLI: Komut satırından hızlıca Spring uygulamaları oluşturmayı sağlar.
+
+Spring Boot kullanmanın avantajları:
+
+"Convention over Configuration" prensibi ile yapılandırma ihtiyacını minimize eder
+Bağımsız, kendi içinde çalışabilen uygulamalar oluşturur
+Mikroservis mimarisine uygunluk sağlar
+DevOps ve CI/CD süreçlerini kolaylaştırır
+Hızlı geliştirme ve prototipleme imkanı verir
+
+
+
+
+

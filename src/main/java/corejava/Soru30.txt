@@ -1,0 +1,273 @@
+SOLİD Prensiplerini açıklayınız.
+
+SOLID prensipleri, yazılım geliştirmede sürdürülebilir, esnek ve bakımı kolay kod yazmak için kullanılan beş temel
+ prensiptir.
+
+1. Single Responsibility Principle (Tek Sorumluluk Prensibi)
+Bir sınıfın yalnızca tek bir sorumluluğu olmalıdır.
+
+Kötü Örnek:
+public class UserService {
+    public User getUser(Long id) { /* ... */ }
+    public void saveUser(User user) { /* ... */ }
+    public void sendEmail(User user, String message) { /* ... */ }
+    public void generateUserReport(User user) { /* ... */ }
+}
+
+İyi Örnek:
+@Service
+public class UserService {
+    @Autowired
+    private UserRepository userRepository;
+
+    public User getUser(Long id) {
+        return userRepository.findById(id).orElse(null);
+    }
+
+    public void saveUser(User user) {
+        userRepository.save(user);
+    }
+}
+
+@Service
+public class EmailService {
+    public void sendEmail(User user, String message) { /* ... */ }
+}
+
+@Service
+public class ReportService {
+    public void generateUserReport(User user) { /* ... */ }
+}
+
+
+
+2. Open/Closed Principle (Açık/Kapalı Prensibi)
+Sınıflar genişletmeye açık, değiştirmeye kapalı olmalıdır.
+
+Kötü Örnek:
+public class PaymentProcessor {
+    public void processPayment(Payment payment) {
+        if (payment.getType().equals("credit")) {
+            // Kredi kartı ödeme işlemi
+        } else if (payment.getType().equals("debit")) {
+            // Banka kartı ödeme işlemi
+        }
+        // Yeni bir ödeme tipi eklendiğinde bu metodu değiştirmek gerekir
+    }
+}
+
+İyi Örnek:
+public interface PaymentProcessor {
+    void processPayment(Payment payment);
+}
+
+@Service
+public class CreditCardProcessor implements PaymentProcessor {
+    @Override
+    public void processPayment(Payment payment) {
+        // Kredi kartı ödeme işlemi
+    }
+}
+
+@Service
+public class DebitCardProcessor implements PaymentProcessor {
+    @Override
+    public void processPayment(Payment payment) {
+        // Banka kartı ödeme işlemi
+    }
+}
+
+// Yeni bir ödeme tipi için sadece yeni bir implementasyon ekleriz
+// Yeni bir ödeme yöntemi eklemek için mevcut kodu değiştirmek yerine yeni bir sınıf oluştururuz
+
+@Service
+public class PayPalProcessor implements PaymentProcessor {
+    @Override
+    public void processPayment(Payment payment) {
+        // PayPal ödeme işlemi
+    }
+}
+
+
+
+3. Liskov Substitution Principle (Liskov Yerine Geçme Prensibi)
+Alt sınıflar, üst sınıfların yerine geçebilmelidir.
+
+Kötü Örnek:
+public class Rectangle {
+    protected int width;
+    protected int height;
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getArea() {
+        return width * height;
+    }
+}
+
+public class Square extends Rectangle {
+    @Override
+    public void setWidth(int width) {
+        this.width = width;
+        this.height = width; // Kare için genişlik ve yükseklik aynı olmalı
+    }
+
+    @Override
+    public void setHeight(int height) {
+        this.width = height; // Kare için genişlik ve yükseklik aynı olmalı
+        this.height = height;
+    }
+}
+
+İyi Örnek:
+public interface Shape {
+    int getArea();
+}
+
+public class Rectangle implements Shape {
+    protected int width;
+    protected int height;
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    @Override
+    public int getArea() {
+        return width * height;
+    }
+}
+
+public class Square implements Shape {
+    private int side;
+
+    public void setSide(int side) {
+        this.side = side;
+    }
+
+    @Override
+    public int getArea() {
+        return side * side;
+    }
+}
+
+
+4. Interface Segregation Principle (Arayüz Ayrımı Prensibi)
+İstemciler kullanmadıkları metotlara bağımlı olmamalıdır. Büyük arayüzler yerine küçük ve özelleşmiş arayüzler tercih
+edilmelidir.
+
+//Aşağıdaki Worker arayüzü tüm metodları içerdiği için bazı sınıflar gereksiz metodları implement etmek zorunda kalır:
+Kötü Örnek:
+public interface UserService {
+    User findById(Long id);
+    List<User> findAll();
+    void save(User user);
+    void delete(User user);
+    void sendPasswordResetEmail(User user);
+    void generateReport(User user);
+    void updateUserStatus(User user, String status);
+}
+
+// Arayüzleri spesifik hale getirerek her sınıf sadece ihtiyacı olan metotları uygular
+İyi Örnek:
+public interface UserReadService {
+    User findById(Long id);
+    List<User> findAll();
+}
+
+public interface UserWriteService {
+    void save(User user);
+    void delete(User user);
+    void updateUserStatus(User user, String status);
+}
+
+public interface UserEmailService {
+    void sendPasswordResetEmail(User user);
+}
+
+public interface UserReportService {
+    void generateReport(User user);
+}
+
+@Service
+public class UserServiceImpl implements UserReadService, UserWriteService {
+    // Implementasyon
+}
+
+
+
+5. Dependency Inversion Principle (Bağımlılığın Tersine Çevrilmesi Prensibi)
+✔ Yüksek seviyeli modüller, düşük seviyeli modüllere doğrudan bağımlı olmamalıdır.
+✔ Bağımlılıklar soyutlamalar (interface veya abstract class) aracılığıyla yönetilmelidir.
+
+Kötü Örnek:
+public class OrderService {
+    private MySQLOrderRepository orderRepository = new MySQLOrderRepository();
+
+    public void placeOrder(Order order) {
+        orderRepository.save(order);
+    }
+}
+
+public class MySQLOrderRepository {
+    public void save(Order order) {
+        // MySQL'e kaydeder
+    }
+}
+
+
+İyi Örnek:
+public interface OrderRepository {
+    void save(Order order);
+}
+
+@Repository
+public class MySQLOrderRepository implements OrderRepository {
+    @Override
+    public void save(Order order) {
+        // MySQL'e kaydeder
+    }
+}
+
+@Repository
+public class MongoOrderRepository implements OrderRepository {
+    @Override
+    public void save(Order order) {
+        // MongoDB'ye kaydeder
+    }
+}
+
+@Service
+public class OrderService {
+    private final OrderRepository orderRepository;
+
+    @Autowired
+    public OrderService(OrderRepository orderRepository) {
+        this.orderRepository = orderRepository;
+    }
+
+    public void placeOrder(Order order) {
+        orderRepository.save(order);
+    }
+}
+
+
+
+Özet
+✔ SRP: Her sınıf tek bir sorumluluğa sahip olmalı.
+✔ OCP: Yeni özellik eklerken mevcut kodu değiştirmemeli.
+✔ LSP: Alt sınıflar üst sınıfların yerine geçebilir olmalı.
+✔ ISP: Gereksiz metotları içermeyen küçük arayüzler oluşturulmalı.
+✔ DIP: Bağımlılıklar doğrudan değil, soyutlama ile yönetilmeli.
+
+Bu prensipler, özellikle büyük ve karmaşık projelerde kodun sürdürülebilirliğini ve esnekliğini artırır.

@@ -1,0 +1,13 @@
+Java'da Arraylist İle Linkedlist Arasındaki Farkları Açıklayınız ?
+
+(Java Collection Framework, java.util paketinin altında yer alır. Bu framework, verileri gruplar halinde depolamak ve işlemek için birçok interface, class ve algoritma sağlar. Ana bileşenleri Collection parent interfaceı ve Map parent interfaceıdır.
+Collection Interfaceı altında parent olarak List interfaceı, Queue interfaceı ve Set  interfaceı yer alır.
+* List Interfaceı altında ArrayList, LinkedList, Vector ve Stack classları yer alır.
+* Queue Interfaceı altında PriorityQueue classı, Deque parent interfaceı onun da altında ArrayDeque ve  LinkedList classı yer alır.
+* Set interfaceı altında HashSet ve  LinkedHashSet classı, Sorted parent interfaceı onun da altında TreeSet classı bulunmaktadır.
+Map interfaceı altında Hashtable, LinkedHashMap ve HashMap classları, SortedMap parent interfaceı onun da altında TreeMap classı bulunmaktadır.)
+
+Java'da ArrayList ve LinkedList, her ikisi de List interfaceı implement eder ve benzer şekilde davranır. Ancak, performans ve uygulama açısından  farkları vardır:
+1) Veri Yapısı:
+ArrayList: Arka planda dinamik bir array  kullanır. İçindeki eleman sayısını değiştirebileceğimiz bir array kullanır. Arraylist index kullanır. İndex kullandığı için istediğimiz elemanı bulmak çok kolaydır, elemana ulaşmak kolaydır.
+LinkedList: Çift Yönlü Bağlı Listenin javada uygulanmış şeklidir. Bu listenin içinde düğümler (nodelar) vardır. Her düğümün de içinde 2 bölüm bulunur: ilk bölümde datanın değeri olur, ikinci bölümde pointer olur. Pointerın da içinde bir önceki ve bir sonraki nodeun adresi/referansı olur. LinkedListler index kullanmaz. İndex kullanmadıkları için linkedlistte eleman bulmak daha zor, ama  eleman ekleme ve çıkarmada daha başarılılar.

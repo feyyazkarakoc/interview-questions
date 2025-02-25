@@ -1,0 +1,38 @@
+Spring Bean Nedir? Bean Scope Çeşitleri Nelerdir?
+
+Spring Bean, Spring IoC container tarafından üretilen, yönetilen ve işlem bitiminde imha edilen nesnelerdir.
+
+Spring Bean Tanımlama Yöntemleri:
+
+XML tabanlı konfigürasyon (<bean> tag'i ile)
+Java tabanlı konfigürasyon (@Bean annotation'ı ile)
+Annotation tabanlı konfigürasyon (@Component, @Service, @Repository, @Controller vs.)
+
+Bean Scope Çeşitleri:
+
+1.singleton (varsayılan): Uygulama başlatıldığında tek bir instance oluşturulur ve herkes bunu kullanır.
+
+@Component
+@Scope("singleton")
+public class UserService { }
+
+2.prototype: Her istekte yeni bir nesne oluşturulur.
+
+@Component
+@Scope("prototype")
+public class ShoppingCart { }
+
+3.request: HTTP isteği başına bir bean  oluşturulur. Sadece web uygulamalarında geçerlidir.
+
+@Component
+@Scope(value = WebApplicationContext.SCOPE_REQUEST)
+public class RequestLogger { }
+
+4.session: HTTP session başına bir bean oluşturulur. Sadece web uygulamalarında geçerlidir.
+@Component
+@Scope(value = WebApplicationContext.SCOPE_SESSION)
+public class UserPreferences { }
+
+5.application: ServletContext başına bir bean oluşturulur. Sadece web uygulamalarında geçerlidir.
+
+6.websocket: WebSocket başına bir bean oluşturulur. Sadece web uygulamalarında geçerlidir.

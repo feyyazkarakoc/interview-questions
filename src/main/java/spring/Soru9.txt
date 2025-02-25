@@ -1,0 +1,45 @@
+
+Spring Data JPA Nedir? Hibernate ile Farkı Nedir?
+
+Spring Data JPA, veritabanı işlemlerini kolaylaştırmak için Spring ekosistemi içinde bulunan ve
+JPA (Java Persistence API) tabanlı bir projedir.
+
+Spring Data JPA Özellikleri:
+
+1.Repository Abstraction: Interface tanımlayarak CRUD işlemlerini otomatik olarak sağlar.
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+}
+
+2.Method İsimlerine Göre Sorgu Oluşturma: Method isimlendirme kurallarına göre otomatik sorgu oluşturma.
+List<User> findByAgeGreaterThanAndActiveTrueOrderByLastNameAsc(int age);
+
+3.@Query Annotation: JPQL veya native SQL sorguları yazabilme imkanı.
+@Query("SELECT u FROM User u WHERE u.status = :status")
+List<User> findUsersByStatus(@Param("status") String status);
+
+4.Pagination ve Sorting: Veri sıralama ve sayfalama desteği.
+Page<User> findAll(Pageable pageable);
+
+
+Spring Data JPA vs Hibernate:
+
+Soyutlama Seviyesi:
+
+Hibernate: JPA'nın bir implementasyonudur
+Spring Data JPA: JPA ve Hibernate üzerinde ek bir soyutlama katmanıdır
+
+
+Kod Miktarı:
+
+Hibernate: Daha fazla boilerplate kod gerektirir
+Spring Data JPA: Minimum kod ile repository pattern implementasyonu sağlar
+
+
+İlişki:
+
+Spring Data JPA, Hibernate gibi JPA implementasyonları üzerinde çalışır, varsayılan olarak Hibernate kullanır
+
+
+Özet olarak,

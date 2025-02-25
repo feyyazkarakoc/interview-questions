@@ -1,0 +1,19 @@
+Spring Boot Auto Configuration Nedir? Nasıl Çalışır?
+
+
+
+Spring Boot Auto Configuration, minimum düzeyde konfigürasyon ile çalışabilen uygulamalar geliştirmeyi sağlayan temel
+bir Spring Boot özelliğidir.
+
+Auto Configuration'ın Çalışma Prensibi:
+
+@SpringBootApplication annotation'ı, otomatik yapılandırmayı etkinleştirir. Bu annotation, aşağıdaki üç annotation'ı
+içerir:
+
+@Configuration: Java tabanlı konfigürasyon sağlar
+@ComponentScan: Bileşenleri taramayı sağlar.
+@EnableAutoConfiguration: Otomatik yapılandırmayı etkinleştirir
+
+
+Spring Boot, classpath’te bulunan bağımlılıklara göre hangi bileşenlerin otomatik yükleneceğini belirler.
+Classpath'te Tomcat varsa, gömülü bir Tomcat sunucusu yapılandırır.

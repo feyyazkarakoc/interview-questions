@@ -1,0 +1,10 @@
+Spring AOP (Aspect-Oriented Programming) Nedir? Nerede Kullanılır?
+
+
+Spring AOP, kod tekrarını önlemek için kullanılan çapraz kesim (cross-cutting concerns) işlemlerini yönetir.
+
+Spring AOP Kullanım Alanları:
+
+Logging (Loglama)
+Security (Güvenlik kontrolleri)
+Transaction Management (İşlem yönetimi)

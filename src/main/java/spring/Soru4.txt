@@ -1,0 +1,7 @@
+Spring MVC ve Spring Boot Arasındaki Farklar Nelerdir?
+
+Özellik	                  Spring MVC	                          Spring Boot
+Konfigürasyon	          XML veya Java ile manuel yapılır	      Otomatik yapılandırma sağlar
+Bağımlılık Yönetimi	      Manuel eklenir	                      Starter paketleri ile hazır gelir
+Sunucu Kullanımı	      Harici Tomcat veya Jetty gerekir	      Gömülü sunucu ile gelir
+Uygulama Başlatma	      Daha karmaşıktır	                      Tek satır komutla çalıştırılabilir

@@ -1,0 +1,40 @@
+Microservice mimarisinde Spring Cloud'un rolü nedir ve hangi bileşenleri kullanırsınız?
+
+
+Spring Cloud, mikroservis mimarisinde karşılaşılan zorlukları çözmek için tasarlanmış bir araç koleksiyonudur. Dağıtık
+sistemlerin geliştirilmesini ve yönetilmesini kolaylaştırır.
+
+Spring Cloud'un Mikroservis Mimarisindeki Rolü:
+
+Servis Keşfi ve Kayıt: Mikroservislerin birbirlerini dinamik olarak bulabilmesini sağlar.
+Yapılandırma Yönetimi: Merkezi yapılandırma ile tüm servislerin konfigürasyonunu yönetir.
+API Gateway: Dış dünya ile mikroservisler arasında tek giriş noktası oluşturur.
+Load Balancing: İstekleri servisler arasında dengeli dağıtır.
+Circuit Breaker Pattern: Servis hatalarını izole eder ve yayılmasını önler.
+Dağıtık İzleme: Birden fazla servisi kapsayan istekleri takip eder.
+
+Mikroservis Mimarisinde Kullanılan Temel Spring Cloud Bileşenleri:
+
+Spring Cloud Netflix Eureka: Servis keşfi ve kayıt için kullanılır.
+javaCopy@EnableEurekaServer // Sunucu için
+@EnableEurekaClient // İstemci için
+
+Spring Cloud Config: Merkezi yapılandırma sunucusu sağlar.
+@EnableConfigServer
+
+Spring Cloud Gateway: Modern, rota tabanlı API Gateway sağlar.
+@EnableGateway
+
+Spring Cloud Circuit Breaker (Resilience4J/Hystrix): Servis hatalarını yönetir.
+@EnableCircuitBreaker
+
+Spring Cloud Sleuth & Zipkin: Dağıtık izleme ve görselleştirme sağlar.
+@EnableDistributedTracing
+
+Spring Cloud Stream: Event-driven mikroservisler için mesajlaşma soyutlaması sağlar.
+Spring Cloud OpenFeign: Deklaratif REST istemcisi sağlar.
+@EnableFeignClients
+
+Spring Cloud LoadBalancer: İstemci taraflı yük dengeleme sağlar.
+
+Bu bileşenler, mikroservisler arasındaki iletişim, izleme, hata toleransı, ölçeklenebilirlik gibi konuları çözerek, geliştiricilerin dağıtık sistemlerin karmaşıklığına odaklanmak yerine iş mantığına odaklanmalarını sağlar.

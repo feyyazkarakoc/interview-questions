@@ -1,0 +1,26 @@
+Spring mvc nedir?
+
+Spring Framework'ün web uygulamaları RESTful API'ler geliştirmek için sunduğu bir modülüdür. O kadar popüler olduki
+artık başlı başına bir framework olarak tanınır hale geldi.
+
+ MVC (Model-View-Controller) tasarım deseni üzerine kurulmuştur. MVC Model-View-Controller'nin kısaltmasıdır ve bir
+ tasarım desenidir ( Design Pattern ). Temel amacı, bir uygulamanın bileşenlerini (Model, View ve Controller)
+ ayırmaktır. Bu,uygulamanın daha iyi ölçeklenebilir, bakımı daha kolay ve daha esnek olmasını sağlar.
+
+Spring MVC'nin temel bileşenleri:
+
+DispatcherServlet: Gelen HTTP isteklerini karşılayan, yönlendiren ve ilgili Controller'a ileten ana bileşendir.
+
+Controller: İstekleri karşılayan ve iş mantığını çalıştıran sınıflardır. (@Controller, @RestController)
+
+Model: Kullanıcıya gönderilecek veriyi temsil eden nesneleri içerir.
+
+View: Kullanıcıya sunulacak görsel arayüzü temsil eder. JSP, Thymeleaf, FreeMarker gibi teknolojiler kullanılabilir.
+
+ModelAndView: Model ve View'ı birlikte kapsayan bir nesnedir.
+
+View Resolver: Controller’ın döndürdüğü veriyi, doğru View ile eşleştiren mekanizmadır.
+
+HandlerMapping: Gelen isteğin hangi Controller ve metoda yönlendirileceğini belirler.
+
+Core Container (IoC, DI) in getirdiğin kolaylığı sağlar. Çünkü spring MVC'yi spring üzerine inşa ediyoruz.

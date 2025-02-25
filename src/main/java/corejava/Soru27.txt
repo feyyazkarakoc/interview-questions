@@ -4,7 +4,7 @@ Java'da abstract class ve interface her ikisi de abstraction uygulamak için kul
 
 Soyutluk açısından:
 1) Abstract classta hem abstract metot hem concret metot olur, interacete sadece abstract metot olur. Fakat istisnai bir durum olarak default ve static kelimeleri ile interace içinde concret methodlar  mümkündür.
-2) İkisinden de obje üretilemez. ABstract classta constructor vardır, interfacete yoktur.
+2) İkisinden de obje üretilemez. Abstract classta constructor vardır, interfacete yoktur.
 
 
 Değişkenler açısından:
@@ -13,13 +13,14 @@ Değişkenler açısından:
 İnheritance açısından:
 1) Bir sınıf single inheritance'ten dolayı yalnızca bir tane abstract class extend edebilir. Ama bir sınıf birden fazla interface implment edebilir. İnterfacete multiply inheritance mümkündür.
 2) Bir class abstract classın parentı olabilir, ama bir class interfaceın parentı olamaz.
+3) Abstract class multiple inheritance’ı desteklemez. İnterface multiple inheritance’ı destekler.
 
 Metotlar açısından:
 1)Abstract classtaki metotlar  herhangi bir erişim belirleyici alabilir. abstract anahtar kelimesiyle belirtilmesi zorunludur. İnterfacete ise metotlar default olarak public abstracttır. Ama yazmaya gerek yoktur.
 
 Kullanım amaçları açısından:
 1) Abstract classlar child classların kullanmak zorunda oldukları ve kullanımı isteğe bağlı olan metotları içerirler. İnterface ise istisnalar hariç sadece child classların  mecburi olarak kullanmaka zorunda olduğu metotları içerirler.
-2) Abstract class multiple inheritance’ı desteklemez. İnterface multiple inheritance’ı destekler.
+
 
 
 

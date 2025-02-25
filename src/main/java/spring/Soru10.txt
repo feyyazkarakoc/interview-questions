@@ -1,0 +1,5 @@
+Spring Transaction Management Nedir? @Transactional Anotasyonu Nasıl Kullanılır?
+
+
+Spring, transaction işlemlerini yönetmek için @Transactional anotasyonunu kullanır.
+İşlem başarısız olursa (hata alırsa), yapılan tüm değişiklikler geri alınır (rollback).

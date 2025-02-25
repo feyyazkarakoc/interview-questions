@@ -1,0 +1,15 @@
+Spring Framework'ün core bileşenleri nelerdir ve ne işe yararlar?
+
+
+Spring Framework'ün core bileşenleri şunlardır:
+
+Spring Core Container: Framework'ün temelini oluşturur ve IoC (Inversion of Control) ile DI (Dependency Injection) mekanizmalarını sağlar. Beans, Core, Context ve SpEL (Spring Expression Language) modüllerini içerir.
+Spring AOP (Aspect-Oriented Programming): Loglama, güvenlik, transaction yönetimi gibi çapraz kesen ilgileri (cross-cutting concerns) modüler bir şekilde uygulamanın farklı katmanlarına entegre etmeyi sağlar.
+Spring DAO/JDBC: Veritabanı işlemleri için altyapı sunar, JDBC kodlamasını basitleştirir, exception handling sağlar ve kaynak yönetimini otomatikleştirir.
+Spring ORM: Hibernate, JPA, JDO gibi ORM araçlarıyla entegrasyon sağlayarak veritabanı etkileşimini kolaylaştırır.
+Spring Web: Web uygulamaları geliştirmek için gerekli altyapıyı sunar. Web MVC, WebFlux, WebSocket ve Servlet API entegrasyonlarını içerir.
+Spring MVC: Model-View-Controller tasarım desenini uygulayarak web uygulamaları geliştirmeyi sağlar.
+Spring Transaction Management: Deklaratif ve programatik transaction yönetimi için altyapı sağlar, farklı transaction API'leri ile çalışabilir.
+Spring Security: Kimlik doğrulama, yetkilendirme ve diğer güvenlik özelliklerini sağlayan güvenlik çerçevesidir.
+Spring Test: Ünite ve entegrasyon testleri için kapsamlı destek sunar. MockMvc, TestContext çerçevesi gibi araçları içerir.
+Spring Boot: Auto-configuration, embedded server ve starter dependency'ler ile "convention over configuration" yaklaşımını benimseyerek hızlı uygulama geliştirmeyi sağlar.

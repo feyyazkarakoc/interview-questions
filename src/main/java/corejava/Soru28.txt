@@ -1,6 +1,6 @@
 Java'da Static Keyword Nedir, Açıklayınız ?
 
-1) static keyword, Java'da  class üyelerini (yani metot ve variableları) nesneye değil, doğrudan sınıfa bağlamak için kullanılır. Yani, static üye, sınıfın herhangi bir örneği oluşturulmadan kullanılabilir.
+1) static keyword, Java'da  class üyelerini (yani metot ve variableları) nesneye değil, doğrudan sınıfa bağlamak için kullanılır. static üye, sınıfın herhangi bir örneği oluşturulmadan kullanılabilir.
 2) static üyeler classtan üretilen bütün objeler için ortaktır.
 3) static bir üye değiştirilirse tüm objeler değişiklikten etkilenir.
 3) static variable'a ve static metoda classın ismi ile ulaşılır.
@@ -9,7 +9,7 @@ Java'da Static Keyword Nedir, Açıklayınız ?
 static variables/class variables
 1) Eğer bir sınıfa ait değişkenlerin başına "static" yazılırsa, o değişkenler artık sınıf değişkeni olurlar.
 2) Sınıf değişkeni olarak tanımlanan değişkenler, her nesne oluşturduğumuzda ayrı ayrı oluşmazlar. Sınıfa ait ne kadar nesne olursa olsun, sınıf değişkenleri 1 tanedir.
-3) Sınıf değişkenleri sınıfa ait hiç nesne oluşturulmasa bile bellekte yer kaplarlar. Yani, sınıfın hiçbir nesnesi yoksa bile static değişkenler bellekte var olur.
+3) Sınıf değişkenleri sınıfa ait hiç nesne oluşturulmasa bile bellekte yer kaplarlar. Sınıfın hiçbir nesnesi yoksa bile static değişkenler bellekte var olur.
 4) Sınıfın tüm örnekleri aynı bellek alanını kullanarak bu static değişkene erişebilir ve onu değiştirebilir.
 5) static değişkenler global durumları veya sabit değerleri saklamak için kullanılır.
 

@@ -1,0 +1,9 @@
+Spring Boot Actuator Nedir? Hangi Metrikleri Sağlar?
+
+Spring Boot Actuator, özellikle microservice mimarilerinde ve bulut ortamlarında uygulamaları izlemek, sorunları tespit
+etmek ve performansı optimize etmek için  bir araçtır.Spring Boot Actuator, uygulamanın durumu ve performansını izlemek
+için kullanılan bir modüldür.
+Önemli Actuator Endpoint’leri:
+health → Uygulamanın çalışıp çalışmadığını kontrol eder.
+metrics → Bellek kullanımı, CPU yükü gibi sistem metriklerini gösterir.
+loggers → Log seviyelerini dinamik olarak değiştirebilir.

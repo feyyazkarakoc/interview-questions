@@ -1,0 +1,18 @@
+Spring nedir?
+
+Spring javada enterprise applicationlar/kurumsal uygulamalar geliştirmek için JavaEE'ye alternatif olarak ortaya çıkmış, enterprise projeler geliştirmek için içinde her şeyi barındıran frameworkler yada projeler topluluğudur.  İçinde 25 tane proje var, her biri bir amaca/göreve yönelik hizmet eder.
+
+Spring,aynı zamanda bu projelerden bir tanesi, ana framework, genel amaca hizmet eden  açık kaynaklı bir framework'tür.Diğer Spring projeleri Spring Framework’ün üzerine inşa edilir Javada kurumsal uygulamalar geliştirmek için önceden J2EE frameworkü ve içinde EJB denen özel classlar vardı, bu classların yazımı çok zordu vardı. 2004 yılında EE'ye (Enterprise Edition) alternatif olarak  Spring ortaya çıktı, en popüler framework oldu. Yüzde 70 civarında sektörde kullanılmaktadır.
+
+
+Spring framework'ün temel özellikleri:
+
+IoC (Inversion of Control): Normalde nesne oluşturma işlemi manuel olarak yapılır.  Obje oluşturmak maliyetli, işlemci ve memory gerektiriyor, proje boyunca takibi zordur. Inversion of Control nesnelerin oluşturulması ve yönetilmesi Spring IoC Container devretme prensibidir. Spring bizim yerimize core container ile  classtan obje oluşturuyor. Bu objeye spring bean denir.Tekrar bir objeye ihtiyaç duyulursa yeni obje üretmez, uygulama boyunca aynı objeyi kullanır.    Üretilen bu objenin işi bitince yine spring tarafından imha edilir.
+
+DI (Dependency Injection): Uygulama geliştirirken olabildiğince classlar arasındaki bağımlılığı azaltmak/gevşetmek isteriz.(loose coupling) Çünkü classlarımızı değişime/gelişime açık bir şekilde geliştirmek isteriz. Bir nesne oluşturmak, sıkı bağlılığa (tight coupling) neden olur ve yönetimi zorlaşır. Bunun için dependency injection tasarım kalıbını kullanırız. Bizim manuel olarak yaptığımız dependency injection mekanizmasını spring otomatik olarak yapıyor. Spring bir obje üretip verirken içine bağımlılığı enjekte edip bize verir. Spring, IoC Container aracılığıyla bağımlılıkları enjekte eder.Bağımlılıklar constructor, setter veya field injection ile enjekte edilir.
+
+Spring MVC: Web uygulamaları geliştirmek için MVC (Model-View-Controller) tasarım kalıbını sağlar.
+Spring Boot: Auto configüration ile  hızlı uygulama geliştirmemizi sağlar, otomatik yapılandırma özelliği sunar.
+Spring Data JPA: HibernateIn üstüne bir katman daha ilave ederek ORM desteği ile  veritabanı işlemlerini kolaylaştırır.
+Spring Security: Kimlik doğrulama ve yetkilendirme mekanizmaları sağlar.
+Spring Cloud : Mikroservis mimarisi için servis keşfi, yük dengeleme ve dağıtık yapı yönetimi gibi özellikler sunar.
