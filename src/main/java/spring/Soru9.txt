@@ -6,40 +6,29 @@ JPA (Java Persistence API) tabanlı bir projedir.
 
 Spring Data JPA Özellikleri:
 
-1.Repository Abstraction: Interface tanımlayarak CRUD işlemlerini otomatik olarak sağlar.
+1.Interface tanımlayarak ve JpaRepository'den extend ederek CRUD işlemlerini otomatik olarak sağlar.
+Bu da Boilerplate kodunu azaltmayı sağlar.
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
 }
 
-2.Method İsimlerine Göre Sorgu Oluşturma: Method isimlendirme kurallarına göre otomatik sorgu oluşturma.
+2. Method isimlendirme kurallarına göre otomatik sorgu oluşturma imkanı sağlar.
 List<User> findByAgeGreaterThanAndActiveTrueOrderByLastNameAsc(int age);
 
-3.@Query Annotation: JPQL veya native SQL sorguları yazabilme imkanı.
+3.@Query Annotation'u ile JPQL veya native SQL sorguları yazabilme imkanı sağlar.
 @Query("SELECT u FROM User u WHERE u.status = :status")
 List<User> findUsersByStatus(@Param("status") String status);
 
-4.Pagination ve Sorting: Veri sıralama ve sayfalama desteği.
+4.Pagination ve Sorting ile Veri sıralama ve sayfalama desteği sağlar.
 Page<User> findAll(Pageable pageable);
 
 
 Spring Data JPA vs Hibernate:
 
-Soyutlama Seviyesi:
+1. Hibernate JPA'nın bir implementasyonudur. Spring Data JPA, JPA ve Hibernate üzerinde ek bir soyutlama katmanıdır
 
-Hibernate: JPA'nın bir implementasyonudur
-Spring Data JPA: JPA ve Hibernate üzerinde ek bir soyutlama katmanıdır
+2.Hibernate, daha fazla boilerplate kod gerektirir.Spring Data JPA Minimum kod ile repository  implementasyonu
+ sağlar
 
-
-Kod Miktarı:
-
-Hibernate: Daha fazla boilerplate kod gerektirir
-Spring Data JPA: Minimum kod ile repository pattern implementasyonu sağlar
-
-
-İlişki:
-
-Spring Data JPA, Hibernate gibi JPA implementasyonları üzerinde çalışır, varsayılan olarak Hibernate kullanır
-
-
-Özet olarak,
+3.Spring Data JPA, Hibernate gibi JPA implementasyonu üzerinde çalışır, varsayılan olarak Hibernate kullanır

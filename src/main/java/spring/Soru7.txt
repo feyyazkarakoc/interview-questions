@@ -16,4 +16,4 @@ içerir:
 
 
 Spring Boot, classpath’te bulunan bağımlılıklara göre hangi bileşenlerin otomatik yükleneceğini belirler.
-Classpath'te Tomcat varsa, gömülü bir Tomcat sunucusu yapılandırır.
+Örneğin, Classpath'te Tomcat varsa, gömülü bir Tomcat sunucusu yapılandırır.

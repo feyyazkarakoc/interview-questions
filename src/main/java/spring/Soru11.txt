@@ -5,11 +5,11 @@ framework’üdür.
 
 Spring Security Temel Özellikleri:
 
-Authentication (Kimlik Doğrulama): Kullanıcının kimliğini doğrulama
-Authorization (Yetkilendirme): Doğrulanmış kullanıcının hangi kaynaklara erişebileceğini belirleme
-Method Security: Metod seviyesinde güvenlik sağlama (@PreAuthorize, @PostAuthorize)
-CSRF, XSS koruma: Web güvenlik açıklarına karşı koruma sağlama
+1.Authentication (Kimlik Doğrulama): Kullanıcının kimliğini doğrulama
+2.Authorization (Yetkilendirme): Doğrulanmış kullanıcının hangi kaynaklara erişebileceğini belirleme
+3.Method Security: Metod seviyesinde güvenlik sağlama (@PreAuthorize, @PostAuthorize)
+4.CSRF, XSS koruma: Web güvenlik açıklarına karşı koruma sağlama
 
-Spring Security ve JWT Entegrasyonu:
+JWT Entegrasyonu:
 JWT (JSON Web Token), kullanıcı kimlik bilgilerini güvenli bir şekilde taşımak için kullanılan bir token formatıdır.
-JWT, kullanıcının oturum açtıktan sonra her istekte sunucuya kimliğini doğrulamak için gönderdiği bir token’dır.
+Bu token, kullanıcı oturum açtıktan sonra her istekte sunucuya kimliğini doğrulamak için gönderilir.

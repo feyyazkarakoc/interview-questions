@@ -5,21 +5,28 @@ konfigürasyon ile çalışan bir Spring uygulaması oluşturmaktır.
 
 Spring Boot'un temel özellikleri:
 
-Auto-configuration (Otomatik Yapılandırma): Classpath'teki JAR'ları ve yapılandırmaları analiz ederek uygulamayı
-otomatik yapılandırır. Örneğin classpath'te H2 veritabanı varsa, Spring Boot otomatik olarak bir H2 veritabanı
-yapılandırır.
-Starter Dependencies: Geliştirmeyi basitleştiren hazır bağımlılık paketleri sunar. Örneğin, spring-boot-starter-web ile web uygulaması için gereken tüm bağımlılıklar otomatik olarak eklenir.
-Embedded Server: Gömülü sunucu (Tomcat, Jetty, Undertow) içerir, böylece harici bir sunucu yapılandırmaya gerek kalmaz.
-Actuator: Uygulamanın durumunu, metriklerini ve sağlığını izleme imkanı verir.
-Spring CLI: Komut satırından hızlıca Spring uygulamaları oluşturmayı sağlar.
+1.Auto-configuration (Otomatik Yapılandırma): Classpath'teki JAR'ları ve yapılandırmaları analiz ederek uygulamayı
+otomatik yapılandırır.
 
-Spring Boot kullanmanın avantajları:
+2.Embedded Server: Gömülü sunucu (Tomcat, Jetty, Undertow) içerir, böylece harici bir sunucu yapılandırmaya gerek
+kalmaz.
 
-"Convention over Configuration" prensibi ile yapılandırma ihtiyacını minimize eder
-Bağımsız, kendi içinde çalışabilen uygulamalar oluşturur
-Mikroservis mimarisine uygunluk sağlar
-DevOps ve CI/CD süreçlerini kolaylaştırır
-Hızlı geliştirme ve prototipleme imkanı verir
+3.Starter Dependencies: Geliştirmeyi basitleştiren hazır bağımlılık paketleri sunar. Spring-boot-starter-web ile
+ gereken tüm bağımlılıklar otomatik olarak eklenir.
+
+4.Spring Data JPA: HibernateIn üstüne bir katman daha ilave ederek ORM desteği ile  veritabanı işlemlerini
+kolaylaştırır.
+
+5.Actuator: Uygulamanın durumunu, metriklerini ve sağlığını izleme imkanı verir.
+
+6.Spring CLI: Komut satırından hızlıca Spring uygulamaları oluşturmayı sağlar.
+
+7.Bağımsız, kendi içinde çalışabilen uygulamalar oluşturur.
+
+8.Mikroservis mimarisine uygunluk sağlar.
+
+9.DevOps ve CI/CD süreçlerini kolaylaştırır
+
 
 
 

@@ -9,18 +9,18 @@ artık başlı başına bir framework olarak tanınır hale geldi.
 
 Spring MVC'nin temel bileşenleri:
 
-DispatcherServlet: Gelen HTTP isteklerini karşılayan, yönlendiren ve ilgili Controller'a ileten ana bileşendir.
+1.DispatcherServlet: Gelen HTTP isteklerini karşılayan ve ilgili Controller'a ileten ana bileşendir.
 
-Controller: İstekleri karşılayan ve iş mantığını çalıştıran sınıflardır. (@Controller, @RestController)
+2.HandlerMapping: Gelen isteğin hangi Controller ve metoda yönlendirileceğini belirler.
 
-Model: Kullanıcıya gönderilecek veriyi temsil eden nesneleri içerir.
+3.Controller: İstekleri karşılayan ve iş mantığını çalıştıran sınıflardır.
 
-View: Kullanıcıya sunulacak görsel arayüzü temsil eder. JSP, Thymeleaf, FreeMarker gibi teknolojiler kullanılabilir.
+4.Model: Kullanıcıya gönderilecek veriyi temsil eden nesneleri içerir.
 
-ModelAndView: Model ve View'ı birlikte kapsayan bir nesnedir.
+5.View: Kullanıcıya sunulacak görsel arayüzü temsil eder. JSP, Thymeleaf, FreeMarker gibi teknolojiler kullanılabilir.
 
-View Resolver: Controller’ın döndürdüğü veriyi, doğru View ile eşleştiren mekanizmadır.
+6.ModelAndView: Model ve View'ı birlikte kapsayan bir nesnedir.
 
-HandlerMapping: Gelen isteğin hangi Controller ve metoda yönlendirileceğini belirler.
+7.View Resolver: Controller’ın döndürdüğü veriyi, doğru View ile eşleştiren mekanizmadır.
 
-Core Container (IoC, DI) in getirdiğin kolaylığı sağlar. Çünkü spring MVC'yi spring üzerine inşa ediyoruz.
+8.Spring MVC'yi spring üzerine inşa ediyoruz. Dolayısıyla Core Container (IoC, DI) in getirdiğin kolaylığı sağlar.

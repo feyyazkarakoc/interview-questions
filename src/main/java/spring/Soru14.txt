@@ -1,19 +1,20 @@
 Spring Bean Lifecycle'ı nasıl çalışır?
 
-Spring Bean Lifecycle, bir bean’in (Spring tarafından yönetilen nesne) oluşturulması, başlatılması, kullanılması ve yok edilmesi süreçlerini kapsayan bir mekanizmadır. Spring IoC Container, bu yaşam döngüsünü yönetir.
+Spring Bean Lifecycle, bir bean’in (Spring tarafından yönetilen nesne) oluşturulması, başlatılması, kullanılması ve
+yok edilmesi süreçlerini kapsayan bir mekanizmadır. Spring IoC Container, bu yaşam döngüsünü yönetir.
 
 Spring Bean’in Yaşam Döngüsü Adımları
-1️⃣ Nesne (Bean) Oluşturulur:
+1.Nesne (Bean) Oluşturulur:
 Spring, @Component, @Bean veya @Configuration anotasyonları ile belirtilen nesneyi oluşturur.
 
-2️⃣ Bağımlılıklar Enjekte Edilir (Dependency Injection):
+2. Bağımlılıklar Enjekte Edilir (Dependency Injection):
 @Autowired, Constructor Injection veya Setter Injection ile bağımlılıklar atanır.
 
-3️⃣ İlk Aşama Geri Çağrılar (Post-Initialization Callbacks):
+3. İlk Aşama Geri Çağrılar (Post-Initialization Callbacks):
 Bean, Spring Container’a eklendikten sonra başlatılmadan önce @PostConstruct veya InitializingBean arayüzü çağrılabilir.
 
-4️⃣ Bean Kullanılmaya Hazır Hale Gelir:
+4.Bean Kullanılmaya Hazır Hale Gelir:
 Bean, uygulama boyunca kullanılır ve isteklere yanıt verir.
 
-5️⃣ Kapatılma ve Yok Edilme (Destruction Phase):
+5.Kapatılma ve Yok Edilme (Destruction Phase):
 Uygulama kapatılırken @PreDestroy veya DisposableBean metotları çağrılarak temizleme işlemleri yapılır.

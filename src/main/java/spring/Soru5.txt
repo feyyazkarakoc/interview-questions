@@ -1,12 +1,21 @@
  Spring IoC (Inversion of Control) ve Dependency Injection (DI) Nedir?
 
+IoC (Inversion of Control): Normalde nesne oluşturma işlemi manuel olarak yapılır.  Obje oluşturmak maliyetli, işlemci
+ve memory gerektiriyor, proje boyunca takibi zordur. Inversion of Control, nesnelerin oluşturulmasını ve yönetilmesini
+Spring IoC Container'e devretme prensibidir. Spring bizim yerimize core container ile  classtan obje oluşturuyor. Bu
+objeye spring bean denir.Tekrar bir objeye ihtiyaç duyulursa yeni obje üretmez, uygulama boyunca aynı objeyi kullanır.
+Üretilen bu objenin işi bitince yine spring tarafından imha edilir.
 
+DI (Dependency Injection): Uygulama geliştirirken olabildiğince classlar arasındaki bağımlılığı azaltmak/gevşetmek
+isteriz.(loose coupling) Çünkü classlarımızı değişime/gelişime açık bir şekilde geliştirmek isteriz. Bir nesne
+oluşturmak, sıkı bağlılığa (tight coupling) neden olur ve yönetimi zorlaşır. Bunun için dependency injection tasarım
+kalıbını kullanırız. Bizim manuel olarak yaptığımız dependency injection mekanizmasını spring otomatik olarak yapıyor.
+Spring bir obje üretip verirken içine bağımlılığı enjekte edip bize verir. Spring, IoC Container aracılığıyla
+bağımlılıkları enjekte eder.Bağımlılıklar constructor, setter veya field injection ile enjekte edilir.
 
-IoC (Inversion of Control): Normalde nesne oluşturma işlemi manuel olarak yapılır.  Obje oluşturmak maliyetli, işlemci ve memory gerektiriyor, proje boyunca takibi zordur. Inversion of Control nesnelerin oluşturulması ve yönetilmesi Spring IoC Container devretme prensibidir. Spring bizim yerimize core container ile  classtan obje oluşturuyor. Bu objeye spring bean denir.Tekrar bir objeye ihtiyaç duyulursa yeni obje üretmez, uygulama boyunca aynı objeyi kullanır.    Üretilen bu objenin işi bitince yine spring tarafından imha edilir.
-
-DI (Dependency Injection): Uygulama geliştirirken olabildiğince classlar arasındaki bağımlılığı azaltmak/gevşetmek isteriz.(loose coupling) Çünkü classlarımızı değişime/gelişime açık bir şekilde geliştirmek isteriz. Bir nesne oluşturmak, sıkı bağlılığa (tight coupling) neden olur ve yönetimi zorlaşır. Bunun için dependency injection tasarım kalıbını kullanırız. Bizim manuel olarak yaptığımız dependency injection mekanizmasını spring otomatik olarak yapıyor. Spring bir obje üretip verirken içine bağımlılığı enjekte edip bize verir. Spring, IoC Container aracılığıyla bağımlılıkları enjekte eder.Bağımlılıklar constructor, setter veya field injection ile enjekte edilir.
 
 1.Constructor Injection (Tercih edilen yöntem)
+
 @Service
 public class UserService{
 
@@ -20,17 +29,18 @@ userRepository=this.userRepository;
 
 2.Setter İnjection
 
-
 @Service
 public class UserService{
 
 private UserRepository userRepository;
 
+@Autowired
 public void setUserRepository(UserRepository userRepository){
 this.userRepository = userRepository;
 }}
 
-3.Field İnjection:
+
+3.Field İnjection(Tercih edilmez):
 
 @Service
 public class UserService{
