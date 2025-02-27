@@ -1,0 +1,53 @@
+Soru 2:
+
+Microservice mimarisi hangi amaçlar ve koşullar altında tercih edilmelidir?
+Microservice mimarisinin avantajları ve dezavantajları nelerdir?
+Sizce. bir projede microservice yapısını benimsemeden önce hangi faktörler göz önünde bulundurulmalıdır?
+
+
+Microservice mimarisini uygulamamız gereken durumlar:
+- Geliştireceğimiz uygulama karmaşık, büyük ölçekli ve giderek genişleyecek bir uygulama ise,
+- Ekiplerin bağımsız çalışması gerekiyorsa,
+- Uygulamamızda bazı bölümler çok yoğun trafik alacaksa,
+- Uygulamamız farlı diller, farklı frameworkler, farkli veri tabanları gerektiriyorsa,
+- Sürekli güncelleme ve hata yönetimi gerekiyorsa.
+
+Microservice mimarisinin avantajları:
+- Yoğun trafik alan servisi diğerlerinden bağımsız geliştirerek verimliliği artırırız.
+- Bağımsız geliştirme sağladığı için, her ekip farklı bir microservice geliştirir.
+- Bir hata oluştuğunda, sadece ilgili servis etkilenir. Yalıtımdan dolayı sistemin geri kalanı çalışmaya devam eder.
+- Esneklik sağlar. Her servis için farklı dil, farkli framework veya veri tabanı kullanabiliriz.
+- Sürekli entegrasyon ve dağıtım süreçlerini (CI/CD) kolaylaştırır.
+- Servisler ayrı çalıştığı için, bir servis art niyetli bir tehditle karşılaşırsa diğerleri etkilenmez.
+- Uygulama daha modüler olur ve daha kolay yönetilir.
+- Uygulamaya yeni özellikler eklemek/değiştirmek daha kolay ve daha az risklidir.
+
+Microservice mimarisinin dezavantajları:
+- Her servis ayrı bir uygulama haline geldiği için karmaşıklık artar. Deploy, konfigürasyon, hata izleme süreçleri
+zorlaşır.
+- Dağıtık sistemlerden dolayı yavaşlama, ağ gecikmeleri, veri tutarsızlığı ve senkronizasyon problemleri oluşabilir.
+- Her servisin veri tabanı farklı ise dağıtık veri yönetimi sorunları ortaya çıkabilir.
+- Donanım, yazılım ve ekip maliyeti artar.
+- Hata tespiti zorlaşabilir. Çünkü bir request bazen birçok servisten geçer.
+- Servisler arası uyum gerektiğinden, bir servisteki değişiklik bazen diğer servisleri etkileyebilir.
+
+Microservice yapısına karar vermeden önce şu sorulara cevap aramalıyız:
+- Proje büyük, ölçeklenebilir ve sürekli genişleyecek bir proje mi?
+- Ekip yeterli büyüklükte mi ve DevOps, dağıtık sistemler. API yönetiminde yeterli yetkinlikte mi? Ekip CI/CD,
+Kubernetes gibi ek altyapıları yönetecek olgunlukta mı?
+- Uygulamanın tamamı mı bir kısmı mı yoğun trafik alacak? Tüm sistem mi ölçeklenmeli bir kısmı mı?
+- Mikroservisler birbirine sıkı bağlı mı? Bağlıysa monolitik yapı uygun olabilir.
+- Veri bütünlüğünü korumak çok zor mu? Veriler için ACID gereksinimi yüksek mi? Bu durumda monolitik yapı uygun olabilir.
+- Maliyet ve zaman açısından microservice seçimi uygun mu?
+
+
+
+
+
+
+
+
+
+
+
+

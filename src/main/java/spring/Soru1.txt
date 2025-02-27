@@ -11,7 +11,6 @@ Javada kurumsal uygulamalar geliştirmek için önceden J2EE frameworkü ve içi
 classların yazımı çok zordu. 2004 yılından itibaren Spring ortaya çıktı, hafiflğinden dolayı en popüler framework oldu.
 Yüzde 70 civarında sektörde kullanılmaktadır.
 
-
 Spring framework'ün temel özellikleri:
 
 1.IoC (Inversion of Control): Normalde nesne oluşturma işlemi manuel olarak yapılır.  Obje oluşturmak maliyetli, işlemci

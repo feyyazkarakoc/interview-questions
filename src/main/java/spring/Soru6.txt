@@ -1,9 +1,7 @@
 Spring Bean Nedir? Bean Scope Çeşitleri Nelerdir?
 
 Spring Bean, Spring IoC container tarafından üretilen, yönetilen ve işlem bitiminde imha edilen nesnelerdir.
-
 Spring Bean Tanımlama Yöntemleri:
-
 XML tabanlı konfigürasyon (<bean> tag'i ile)
 Java tabanlı konfigürasyon (@Configuration içinde @Bean annotation'ı ile)
 Bileşen taraması (Component Scanning) ile  (@Component, @Service, @Repository, @Controller vs.)

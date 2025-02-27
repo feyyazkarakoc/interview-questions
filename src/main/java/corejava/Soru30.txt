@@ -271,3 +271,23 @@ public class OrderService {
 ✔ DIP: Bağımlılıklar doğrudan değil, soyutlama ile yönetilmeli.
 
 Bu prensipler, özellikle büyük ve karmaşık projelerde kodun sürdürülebilirliğini ve esnekliğini artırır.
+
+
+SOLID Prensipleri
+SOLID, yazılım geliştirmede sürdürülebilir ve genişletilebilir kodlar yazmak için kullanılan beş temel tasarım prensibidir. Bu prensipler, yazılım bakımını kolaylaştırır ve daha esnek yapılar oluşturmanıza yardımcı olur.
+1. Single Responsibility Principle (Tek Sorumluluk Prensibi)
+Bir sınıfın yalnızca bir sorumluluğu olmalıdır. Yani bir sınıf sadece bir işi yapmalı ve bu işi iyi yapmalıdır.
+Örnek: Bir Rapor sınıfı düşünelim. Bu sınıf hem veri hesaplama hem de rapor formatlaması yapmamalıdır. Bunun yerine, veri hesaplama için ayrı bir sınıf, formatlama için ayrı bir sınıf olmalıdır.
+2. Open/Closed Principle (Açık/Kapalı Prensibi)
+Yazılım varlıkları (sınıflar, modüller, fonksiyonlar vb.) genişletmeye açık, değiştirmeye kapalı olmalıdır.
+Örnek: Şekillerin alanını hesaplayan bir sistem düşünün. Yeni bir şekil eklemek istediğinizde, mevcut kodları değiştirmeden sadece yeni bir şekil sınıfı ekleyerek sistemi genişletebilmelisiniz.
+3. Liskov Substitution Principle (Liskov Yerine Geçme Prensibi)
+Alt sınıflar, üst sınıfların yerine geçebilmelidir. Yani bir üst sınıfın nesnesi ile yapılabilecek her şey, alt sınıfın nesnesiyle de yapılabilmelidir.
+Örnek: Bir Kuş sınıfı ve bundan türetilen Penguen sınıfı düşünelim. Eğer Kuş sınıfında uç() metodu varsa ve penguenler uçamıyorsa, bu prensip ihlal edilmiş olur. Doğru tasarımda, uçma yeteneği ayrı bir arayüz olarak tanımlanmalıdır.
+4. Interface Segregation Principle (Arayüz Ayrımı Prensibi)
+İstemciler, kullanmadıkları arayüzlere bağımlı olmamalıdır. Büyük arayüzler yerine, daha küçük ve özelleştirilmiş arayüzler tercih edilmelidir.
+Örnek: Bir Çalışan arayüzü düşünelim. Bu arayüzde hem yönetim hem de teknik işler için metotlar varsa, teknik çalışanlar yönetim metotlarını boş uygulamak zorunda kalacaktır. Bunun yerine, YönetimGörevleri ve TeknikGörevler gibi ayrı arayüzler oluşturulmalıdır.
+5. Dependency Inversion Principle (Bağımlılığın Tersine Çevrilmesi Prensibi)
+Yüksek seviyeli modüller, düşük seviyeli modüllere bağımlı olmamalıdır. Her ikisi de soyutlamalara bağımlı olmalıdır. Ayrıca, soyutlamalar detaylara bağımlı olmamalı, detaylar soyutlamalara bağımlı olmalıdır.
+Örnek: Bir BildirimServisi düşünelim. Bu servis doğrudan EmailBildirimi sınıfına bağımlı olmamalıdır. Bunun yerine, bir IBildirimGönderici arayüzüne bağımlı olmalı ve bu arayüzü uygulayan herhangi bir sınıf (email, SMS, push notification vb.) kullanılabilmelidir.
+Bu prensipler birlikte uygulandığında, kodunuz daha esnek, anlaşılır ve bakımı kolay hale gelir. SOLID prensipleri, özellikle büyük ve karmaşık yazılım projelerinde, uzun vadeli sürdürülebilirlik sağlar.

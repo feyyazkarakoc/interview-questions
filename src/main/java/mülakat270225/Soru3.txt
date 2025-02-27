@@ -1,0 +1,30 @@
+Soru 3:
+Yeni bir programlama dili öğrenme konusunda yaklaşımınız nedir?
+Daha önce yeni bir dil öğrenmek zorunda kaldınız mı? Eğer öyleyse, nasıl bir süreç izlediniz?
+Bir projede ya da ekip değişikliğinde Go veya Node.js gibi bilmediğiniz bir programlama diliyle karşılaşırsanız nasıl
+bir yol izlersiniz?
+
+
+Yeni bir dil öğrenmeye açık ve istekliyim. Çünkü bu bana yeni bir yön katar. Kurumunuzda benim için yeni alanlarda
+görev almayı ve yeni tecrübeler edinmeyi sağlar. Sürekli öğrenmek ve sürekli tecrübe istediğim bir durum. Sorumluluk
+almayı severim. Bana tolerans ve süre tanınırsa isteneni yerine getirebilirim. Javayı öğrendiğim süreç en zorlusuydu.
+Java en zor dillerden kabul edilir. Onu aştıktan sonra diğer diller daha kolay gelir. Temelde mantık aynı, sadece
+syntax ve bazı çalışma şekilleri değişiyor.
+
+Java ilk öğrendiğim dildir. Süreç olarak şu adımları takip ettim:
+- Profesyonel bir kurs/ekipten temel bilgiyi aldım.
+- Kod yazmadan akılda kalmaz. Bu yüzden CodingBat ve CoderByte ve diğer bazı sitelerin algoritma sorularını çözdüm.
+- Farklı çözüm görürsem en az 3 defa çözdüm. Hata yaparsam en az 3 defa (bazı sorularda 5 defa) çözdüm.
+- Java konsol bazlı 20 tane demo projesi geliştirdim
+- Spring'te 6 proje geliştirdim.
+- Teori kadar pratiğin önemli olduğunu düşünüyorum. Bu yüzden sürekli projeler üzerinde çalışarak pratiğe döktüm.
+
+Bilmediğim bir bir dil ile karşılaşırsam:
+- Öncelikle o dilin temel mantığını anlamaya çalışırım. O dile ait dökümantasyon, profesyonel bir kurs ve küçük
+projelerle ilerlemeye çalışırım. Sadece izlemek yetmez.
+- Sonrasında imkan olursa büyük bir projede pratiğe dökerim.
+- Öğrenmede sabırlıyım. Alternatif çözümleri çok severim ve aynı soruyu 3 ayrı yapay zekaya sorarım. Adım adım
+ilerlerim. Bu ikinci dilim olacağı için herşey daha kolay ve öğrenme süreşi daha kısa olur.
+Çünkü temelde mantik benzer olacak.
+- Node.js veya Go gibi dilleri öğrenmemin her aşamasında java ile kıyaslama yaparım. Çünkü mukayeseli öğrenme ve
+bildiğim şeylerle bağlantı kurarak öğrenme sağlam ve hızlı öğrenmeyi sağlar.

@@ -1,0 +1,37 @@
+
+Soru 1:
+
+Aspect-Oriented Programming (AOP) hakkında ne biliyorsunuz? AOP'nin yazılım geliştirmedeki avantajlarını kısaca
+açıklayabilir misiniz?
+Ayrıca, Spring Boot kullanarak bir metodun çalışma süresini loglayan basit bir annotation yazabilir misiniz?
+
+
+
+Spring AOP, Spring'in core-container bileşeni olarak; kod tekranını önlemek için kullanılan çapraz kesim ilgilerini
+(cross- cutting concerns) yönetir. Temel amacı, iş mantığı ile çapraz kesim ilgilerini birbirinden ayırmaktır.
+
+Kullanım alanları şunlardır:
+- Logging (Loglama)
+- Security (Güvenlik kontrolleri)
+- Transaction management (İşlem yönetimi)
+
+AOP:
+- Çapraz kesen ilgileri uygulamanın farklı katmanlarına entegre eder. Dolayısıyla farklı işlemleri iş mantığından
+ayırarak kodun daha temiz, bakımı daha kolay ve daha modüler olmasını sağlar.
+- Kod tekrarını azaltır.
+- Developerin iş mantığına odaklanmasını sağlar.
+
+Örnek:
+Herhangi bir metodun üzerine @LogExecutionTime anotasyonunu yazarak o metodun çalışma süresini otomatik olarak
+loglayabiliriz.
+
+@Service
+@RequiredArgConstructor
+public class UserService{
+
+private final UserRepository userRepository;
+
+@LogExecutionTime
+public User findUserByld[Long id){
+return userRepository.findByld(id).orElse(null);
+}}

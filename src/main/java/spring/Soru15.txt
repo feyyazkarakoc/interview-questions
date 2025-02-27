@@ -1,21 +1,14 @@
 Microservice mimarisinde Spring Cloud'un rolü nedir ve hangi bileşenleri kullanırsınız?
-
-
 Spring Cloud, mikroservis mimarisinde karşılaşılan zorlukları çözmek için tasarlanmış bir araç koleksiyonudur. Dağıtık
 sistemlerin geliştirilmesini ve yönetilmesini kolaylaştırır.
 
 Spring Cloud'un Mikroservis Mimarisindeki Rolü:
 
 1.Servis Keşfi ve Kayıt: Mikroservislerin birbirlerini dinamik olarak bulabilmesini sağlar.
-
 2.Yapılandırma Yönetimi: Merkezi yapılandırma ile tüm servislerin konfigürasyonunu yönetir.
-
 3.API Gateway: Dış dünya ile mikroservisler arasında tek giriş noktası oluşturur.
-
 4.Load Balancing: İstekleri servisler arasında dengeli dağıtır.
-
 5.Circuit Breaker Pattern: Servis hatalarını izole eder ve yayılmasını önler.
-
 6.Dağıtık İzleme: Birden fazla servisi kapsayan istekleri takip eder.
 
 Mikroservis Mimarisinde Kullanılan Temel Spring Cloud Bileşenleri:
@@ -35,12 +28,10 @@ javaCopy@EnableEurekaServer // Sunucu için
 
 5.Spring Cloud Sleuth & Zipkin: Dağıtık izleme ve görselleştirme sağlar.
 @EnableDistributedTracing
-
 6.Spring Cloud Stream: Event-driven mikroservisler için mesajlaşma soyutlaması sağlar.
 
 7.Spring Cloud OpenFeign: Deklaratif REST istemcisi sağlar.
 @EnableFeignClients
-
 8.Spring Cloud LoadBalancer: İstemci taraflı yük dengeleme sağlar.
 
 Bu bileşenler, mikroservisler arasındaki iletişim, izleme, hata toleransı, ölçeklenebilirlik gibi konuları çözerek,
